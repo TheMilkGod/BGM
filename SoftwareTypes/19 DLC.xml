@@ -1,0 +1,142 @@
+<SoftwareType>
+	<Name>DLC</Name>
+	<Description>Create DLC for Games!</Description>
+    	<Random>0.75</Random>	
+	<Categories>
+		<Category Name="DLC">
+			<Description>Create DLC</Description>
+			<Popularity>1</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>1</TimeScale>
+			<Iterative>1</Iterative>
+			<NameGenerator>DLCgen</NameGenerator>
+			<IdealPrice>19.00</IdealPrice>
+		</Category>
+		<Category Name="Update">
+			<Description>Update Your Game</Description>
+			<Popularity>1</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>1</TimeScale>
+			<Iterative>1</Iterative>
+			<NameGenerator>DLCgen</NameGenerator>
+			<IdealPrice>0.00</IdealPrice>
+		</Category>
+	</Categories>
+	<OSSpecific>False</OSSpecific>
+	<OneClient>FALSE</OneClient>
+	<InHouse>FALSE</InHouse>
+	<Unlock>2000</Unlock>
+	<Category>DLC</Category>
+	<Features>
+		<Feature Forced="True">
+			<Name>Update Base</Name>
+			<Description>Update Base. Includes: Fixing Bugs and Improving Quality</Description>
+			<Category>Updates</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2000</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+			<SoftwareCategory Category="Update">0</SoftwareCategory>
+		</Feature>
+		<Feature Forced="True">
+			<Name>DLC Base</Name>
+			<Description>Phone Base</Description>
+			<Category>Compatibility</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2000</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Missions/Quests)</Name>
+			<Description>Create New Missions/Quests)</Description>
+			<Category>Gameplay</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2004</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Vehicle(s)</Name>
+			<Description>Create New vehicle(s)</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2004</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Map(s)</Name>
+			<Description>Create New Map(s)</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2004</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Player Clothing</Name>
+			<Description>Create New Clothing For Players In-Game</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2010</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+			<Dependency Software="Game Engine">Player Customization</Dependency>
+			<Dependency Software="Game">Player Customization/Creation</Dependency>
+		</Feature>
+		<Feature From="New Player Clothing" Vital="TRUE">
+			<Name>Improve Quality and Quanity of Items</Name>
+			<Category>3D</Category>
+			<Description>Improve Quality and Quanity of Clothing Items</Description>
+			<DevTime>4</DevTime>
+			<Innovation>12</Innovation>
+			<Usability>12</Usability>
+			<Stability>12</Stability>
+			<CodeArt>1</CodeArt>	
+			<Unlock>2014</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+			<Dependency Software="DLC">New Player Clothing</Dependency>
+			<Dependency Software="Game Engine">Player Customization</Dependency>
+			<Dependency Software="Game">Player Customization/Creation</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Weapons</Name>
+			<Description>Create New (a) Weapon(s)</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2010</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

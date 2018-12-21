@@ -1,0 +1,18 @@
+-start(base)
+-base(base2,stop)
+Human Resources 
+HR 
+Employee 
+Proactive HR 
+Machine 
+-base2(end,stop)
+Solutions 
+ Organiser 
+: Aspire 
+HRsorter 
+Integrated HR System 
+Wizard of Labour 
+Wizard of Labor 
+LaborPuma 
+Workhorse 
+-end(stop)

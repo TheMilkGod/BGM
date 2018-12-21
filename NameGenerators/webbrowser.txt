@@ -1,0 +1,17 @@
+-start(base)
+-base(base2)
+Wonder
+Wolf
+Fox
+Cat
+Dog
+Bird
+Wall
+Where
+Ocean
+-base2(end,stop)
+Mosaic
+Surf
+Browser
+Explorer
+-end(stop)

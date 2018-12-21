@@ -1,0 +1,11 @@
+<CompanyType>
+	<Specialization>Home User Apps</Specialization>
+	<PerYear>0.4</PerYear>
+	<Min>3</Min>
+	<Max>8</Max>
+	<Types>
+		<Type Software="Home User Application">1</Type>
+		<Type Software="Antivirus">1</Type>
+		<Type Software="Media Player">1</Type>
+	</Types>
+</CompanyType>

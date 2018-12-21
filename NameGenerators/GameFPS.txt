@@ -1,0 +1,27 @@
+[REPLACE]
+-start(base)
+-base(base2)
+Shake 'n' 
+Lock 'n' 
+Shimmy 'n' 
+Whimbo Tales: 
+Whambo: 
+Bambo: 
+I've Got Ham 
+I've Got Soul 
+Vietnam: 
+Death 
+-base2(end,stop)
+'n' Bake
+But I'm Not A Hamster
+But I'm Not A Soldier
+Warinate
+Destructify
+Kill
+Smash
+Hit
+Hammer
+Smasher
+A Tale of Utterly Pointless Endless Misery
+Tales
+-end(stop)

@@ -1,0 +1,24 @@
+-start(base)
+-base(base2)
+Tactics 
+Think 
+Outsmart 
+Build 
+Plane 
+Train 
+Car 
+Cities 
+City 
+Group
+-base2(end)
+War
+Battle
+Struggle
+Builder
+World
+Galaxy
+Universe
+Platinum
+Gold
+Maximum Awesome McWow Amazeytown
+-end(stop)

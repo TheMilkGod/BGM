@@ -1,0 +1,19 @@
+-start(base)
+Business 
+Analytics 
+BS 
+-base(smallsecond,ext)
+Process 
+System
+Statistical Integration
+-smallsecond(ext,stop)
+Suite
+Core
+
+Technical System
+-ext(stop)
+ NT
+ X
+ VP
+ VIP
+ 

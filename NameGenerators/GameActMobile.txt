@@ -1,0 +1,17 @@
+-start(base)
+-base(base2)
+Zombies 
+Jaguars 
+Donkeylaserfiends 
+Firebreathing Ninja Dragon Cat Druids of Arcturus 7 
+The Unholy Wizard Spatulas 
+-base2(end,stop)
+Attacked My Grandpa!
+Attacked Everything!
+Invade The World
+Versus Ghosts and a Girl Called Emily
+And the Spiral Kaleidoscopic Button Princess
+Dating Scientists
+Should Not Underestimate Jan Michael Vincent
+-end(stop)
+

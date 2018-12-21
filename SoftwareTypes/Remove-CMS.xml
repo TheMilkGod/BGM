@@ -1,0 +1,17 @@
+<SoftwareType Override="True">
+	<Name>CMS</Name>
+    <Delete>True</Delete>
+    <Features>
+        <Feature Forced="True">
+            <Name>Dummy</Name>
+			<Category>System</Category>
+            <Description>Dummy</Description>
+            <Unlock>1970</Unlock>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+        </Feature>
+    </Features>
+</SoftwareType>

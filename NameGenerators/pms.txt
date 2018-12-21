@@ -1,0 +1,13 @@
+-start(base)
+-base(base2,stop)
+Project
+Endeavour
+Enterprise
+Proactive
+-base2(end,stop)
+Solution
+ Organiser
+: Aspiration
+sorter
+Integrated Solution System
+-end(stop)

@@ -1,0 +1,22 @@
+-start(base)
+-base(base2)
+Blam 
+Slam 
+Spam 
+Ham 
+Hungry For 
+Pew Pew 
+War 
+Ultimate Firestorm 
+Gun 
+Shooty 
+-base2(end,stop)
+Poetry
+Bam
+Smam
+Pew
+Pew^2
+Tymian
+Wham
+Skies
+-end(stop)

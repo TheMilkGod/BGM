@@ -1,0 +1,30 @@
+-start(base)
+-base(base2)
+Toen
+And
+Mant
+Span
+Goph
+Wolf
+Car
+Shack
+Elder
+Straw
+-base2(base3)
+rowl 
+sank 
+eev
+dex 
+icate 
+imate 
+icia 
+offeen 
+ifice 
+ammer 
+-base3(end,stop)
+Archiver
+Compressor
+File Squisher
+File Squeezer
+Stuff Squasher
+-end(stop)

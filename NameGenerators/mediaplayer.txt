@@ -1,0 +1,16 @@
+-start(base)
+-base(base2)
+Video
+Movie
+Play
+Fun
+Base
+Wonder
+Awe
+Library
+-base2(end,stop)
+Player
+Play
+View
+Picture
+-end(stop)

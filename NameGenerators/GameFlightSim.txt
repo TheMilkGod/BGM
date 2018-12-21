@@ -1,0 +1,16 @@
+-start(base)
+Air 
+Sky 
+Flight 
+Fighter: 
+Bomber School: 
+Air Command: Sky 
+-base(base2)
+Simulator
+Warriors
+Dragons
+Tigersky
+Bears
+Sword
+School
+-end(stop)

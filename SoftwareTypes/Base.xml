@@ -1,0 +1,66 @@
+	<Features>
+		<Feature>
+			<Name>QA</Name>
+			<Description>Use Quality Assurance to release a more stable product or fix the bugs as your customers irritably stumble into them</Description>
+			<DevTime>1</DevTime>
+			<Category>System</Category>
+			<Innovation>0</Innovation>
+			<Usability>3</Usability>
+			<Stability>8</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+		<Feature>
+			<Name>Auto-update</Name>
+			<Description>Fix things, either OTW or OTA but always OTI and hopefully not too OFTEN else you may end up feeling like you have ADD.</Description>
+			<Category>Network</Category>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>0</Usability>
+			<Stability>6</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1986</Unlock>
+		</Feature>
+		<Feature>
+			<Name>Manual</Name>
+			<Description>How do I do?!</Description>
+			<Category>Writing</Category>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+		</Feature>
+		<Feature>
+			<Name>Digital Manual</Name>
+			<Description>Less time-consuming to create than a physical manual, but no less useful</Description>
+			<Category>Writing</Category>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0</CodeArt>
+			<Unlock>1984</Unlock>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Context Menus</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Description>Right click and boom</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.7</CodeArt>
+			<Unlock>1977</Unlock>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Hardware Optimisation</Name>
+			<Category>System</Category>
+			<Description>Make it run fastetter</Description>
+			<DevTime>1</DevTime>			
+			<Innovation>1</Innovation>
+			<Usability>4</Usability>
+			<Stability>5</Stability>
+			<CodeArt>0.7</CodeArt>
+		</Feature>
+	</Features>

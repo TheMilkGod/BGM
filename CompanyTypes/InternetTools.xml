@@ -1,0 +1,9 @@
+<CompanyType>
+	<Specialization>Internet Tools</Specialization>
+	<PerYear>0.2</PerYear>
+	<Min>1</Min>
+	<Max>4</Max>
+	<Types>
+		<Type Software="Internet Client App">1</Type>
+	</Types>
+</CompanyType>

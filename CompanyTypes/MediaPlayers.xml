@@ -1,0 +1,9 @@
+<CompanyType>
+	<Specialization>Media Players</Specialization>
+	<PerYear>0.2</PerYear>
+	<Min>1</Min>
+	<Max>2</Max>
+	<Types>
+		<Type Software="Media Player">1</Type>
+	</Types>
+</CompanyType>

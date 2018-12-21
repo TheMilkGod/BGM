@@ -1,0 +1,247 @@
+<SoftwareType>
+	<Name>3D Editor</Name>
+	<Category>Graphics</Category>
+	<Description>Points in space, basically</Description>
+	<Random>0.1</Random>
+	<Popularity>0.75</Popularity>
+	<Retention>0.8</Retention>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<Iterative>1</Iterative>
+	<Unlock>1985</Unlock>
+	<IdealPrice>179.99</IdealPrice>
+	<NameGenerator>3DEditor</NameGenerator>
+	<Features>
+		    <Feature Forced="True">
+            <Name>CLI</Name>
+            <Description>Everything via command-line. Laborious "fun".</Description>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>4</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature From="CLI">
+            <Name>GUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <Description>Everything not on the command line, which really is a relief with Databases</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>0.6</CodeArt>
+			<Unlock>1975</Unlock>
+			<Dependency Software="3D Editor">CLI</Dependency>
+        </Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Vertex editing</Name>
+			<Description>Move points in space around on the screen</Description>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>			
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Databases">User-Defined Functions</Dependency>
+			<Dependency Software="2D Editor">Image rendering</Dependency>
+			<Dependency Software="Operating System">GUI</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Rendering</Name>
+			<Unlock>1987</Unlock>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>Process the points into a picture</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Operating System">3D rendering</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Animation</Name>
+			<Unlock>1989</Unlock>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>Make the points move themselves</Description>
+			<DevTime>4</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="3D Editor">Vertex editing</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Sculpting</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>>
+			<Unlock>1995</Unlock>
+			<Description>Pretend the points are clay</Description>
+			<DevTime>4</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="3D Editor">Vertex editing</Dependency>
+		</Feature>
+		<Feature Research="Sculpting">
+			<Name>Voxel sculpting</Name>
+			<Unlock>1997</Unlock>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>Everything is a point</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Physics</Name>
+			<Unlock>1994</Unlock>
+			<Description>Make the points interact</Description>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>			
+			<DevTime>5</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature Research="Rendering">
+			<Name>Realistic hair</Name>
+			<Unlock>1995</Unlock>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>Make lines between the points</Description>
+			<DevTime>6</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.6</CodeArt>
+			<Dependency Software="Operating System">Integral Graphics API</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Particles</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Unlock>1992</Unlock>
+			<Description>Spray points all over the place</Description>
+			<DevTime>4</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="3D Editor">Rendering</Dependency>
+		</Feature>
+		<Feature Research="Particles">
+			<Name>Liquid simulation</Name>
+			<Unlock>1998</Unlock>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>Spill points all over the place</Description>
+			<DevTime>6</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Integral Graphics API</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>PBR</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Unlock>2000</Unlock>
+			<Description>Physically Based Rendering simulates photons reacting with the points</Description>
+			<DevTime>8</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Integral Graphics API</Dependency>
+			<Dependency Software="3D Editor">Rendering</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Distributed rendering</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Unlock>1998</Unlock>
+			<Description>Process the points into a picture on many computers at once</Description>
+			<DevTime>3</DevTime>
+			<Innovation>4</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Integral Graphics API</Dependency>
+			<Dependency Software="3D Editor">Rendering</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Holography Suite</Name>
+			<Category>Holography</Category>
+			<Unlock>2020</Unlock>
+			<DevTime>5</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.75</CodeArt>
+			<Description>For all your holography needs</Description>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+		</Feature>
+		<Feature>
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

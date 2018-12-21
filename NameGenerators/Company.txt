@@ -1,0 +1,55 @@
+[REPLACE]
+-start(base)
+-base(smallsecond,ext)
+Boone
+Chalmer
+Whisker
+Envelope
+Triad
+Triangle
+Mexogova
+Villenask
+Spade
+Vale
+Square
+Rectangle
+Tiny
+Huge
+Mega
+Ultra
+Micro
+Macro
+Mini
+Midi
+Maxi
+Integral
+Amaze
+Vital
+Great
+Immense
+Special
+Triple
+Visi
+Visual
+Audi
+Oscar
+Wilde
+Million
+Unit
+-smallsecond(ext,stop)
+soft
+ware
+ Systems
+soft
+works
+-ext(stop)
+ Inc.
+ Corp.
+ Ltd.
+ LLC
+ Studios
+ Studio
+ Industries
+ Productions
+ Dynamics
+ Operations

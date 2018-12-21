@@ -1,0 +1,16 @@
+-start(base)
+Power 
+Total 
+Utility 
+-base(base2,stop)
+Tools 
+Set 
+Upgrade 
+Command 
+Suite 
+-base2(end,stop)
+Ultra
+Extra
+Mega
+Upgradiest
+-end(stop)

@@ -1,0 +1,9 @@
+<CompanyType>
+	<Specialization>Office Suite</Specialization>
+	<PerYear>0.2</PerYear>
+	<Min>1</Min>
+	<Max>3</Max>
+	<Types>
+		<Type Software="Office Software">1</Type>
+	</Types>
+</CompanyType>

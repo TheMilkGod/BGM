@@ -1,0 +1,26 @@
+-start(base)
+-base(base2)
+Slap
+Punch 
+Choke
+Beat 
+Slam 
+Headbutt 
+Kick 
+Bite 
+Claw 
+Nipplechafe 
+Boom
+-base2(end,stop)
+Slam
+Bam
+Ram
+Attack
+War
+Strife
+Justice Schmustice
+Beater
+Hammer
+Spammer
+Ultimate Violence Beater Smackdown Pro
+-end(stop)

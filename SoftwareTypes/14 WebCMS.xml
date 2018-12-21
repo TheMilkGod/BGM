@@ -1,0 +1,82 @@
+<SoftwareType>
+<Name>WebCMS</Name>
+	<Category>Web</Category>
+	<Description>To avoid forcing bloggers to do backend webprograming</Description>
+	<Popularity>0.25</Popularity>
+	<Retention>0.8</Retention>
+	<TimeScale>0.75</TimeScale>
+	<Iterative>1</Iterative>
+	<Unlock>1992</Unlock>
+	<NameGenerator>WebPublishing</NameGenerator>
+	<Random>0</Random>
+	<OSSpecific>False</OSSpecific>
+	<OneClient>False</OneClient>
+	<InHouse>False</InHouse>
+	<IdealPrice>99.99</IdealPrice>
+	<Features>
+		<Feature Forced="TRUE">
+			<Name>File management</Name>
+			<Category>Web</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Visualization tools</Name>
+			<Category>Web</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+		</Feature>
+		<Feature Vital="True">
+			<Name>WYSIWYG</Name>
+			<Category>Web</Category>
+			<Description>What You See Is probably What You Get</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.8</CodeArt>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Community</Name>
+			<Description>The internet needs more comment sections</Description>
+			<Category>Web</Category>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Widgets</Name>
+			<Category>Web</Category>
+			<Description>Also known as social media buttons</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Themes</Name>
+			<Category>Web</Category>
+			<Description></Description>
+			<DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>4</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+			<Dependency Software="WebCMS">WYSIWYG</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

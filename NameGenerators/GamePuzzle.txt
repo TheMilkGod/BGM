@@ -1,0 +1,17 @@
+-start(base)
+-base(base2)
+Puzzle 
+Puzzly
+Brainy 
+Brain 
+Braintease 
+Goat Quest: The 
+Thoughtbendinator: The 
+-base2(end,stop)
+NogginNotionSmasher
+Puzzle
+IQTrainer
+Puzzlyer One
+Puzzlesauce
+Puzzle-O-McDeluxe
+-end(stop)

@@ -1,0 +1,24 @@
+-start(base)
+-base(base2)
+Swishy 
+Shiny 
+Magical 
+Pretty 
+Wonderful 
+Amazeballs 
+Great 
+Super 
+Ultra 
+Uber 
+Mega 
+Giga 
+-base2(end,stop)
+Task Management
+Task Manager
+Task Commander
+Thread Manager
+Thread Commander
+Process Captain
+Task Admiral
+Task Marshal
+-end(stop)

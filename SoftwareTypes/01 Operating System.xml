@@ -1,0 +1,389 @@
+<SoftwareType>
+	<Name>Operating System</Name>
+	<Category>Computing</Category>
+	<Description>The Operating System is the largest piece of software in Software Inc.
+Most software needs an Operating System to run on. When people stop buying a line of Operating Systems, they will also stop buying software for them.</Description>
+	<Random>0</Random>
+	<Categories>
+		<Category Name="Computer">
+			<Description>For the desk</Description>
+			<Popularity>1</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>1</TimeScale>
+			<Iterative>1</Iterative>
+			<IdealPrice>339.99</IdealPrice>
+		</Category>
+		<Category Name="Console">
+			<Description>For the TV</Description>
+			<Popularity>0.75</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>0.65</TimeScale>
+			<Iterative>1</Iterative>
+			<IdealPrice>239.99</IdealPrice>
+		</Category>
+		<Category Name="Phone">
+			<Description>For everywhere</Description>
+			<Popularity>1</Popularity>
+			<Retention>0.7</Retention>
+			<TimeScale>1.1</TimeScale>
+			<Iterative>1</Iterative>
+			<IdealPrice>99.99</IdealPrice>
+			<Unlock>1995</Unlock>
+		</Category>
+	</Categories>
+	<OSSpecific>False</OSSpecific>
+	<OneClient>False</OneClient>
+	<InHouse>False</InHouse>
+	<NameGenerator>OS</NameGenerator>
+	<Features>
+			<Feature Forced="TRUE">
+			<Name>Text input system</Name>
+			<Description>Allow the user to interact with the operating system with a keyboard or keypad</Description>
+			<Category>UI</Category>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Pointer input system</Name>
+			<Description>Allow the user to interact with the operating system via pointer human interface device, such as a mouse or trackpad</Description>
+			<Category>UI</Category>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">1975</SoftwareCategory>
+			<SoftwareCategory Category="Console">1982</SoftwareCategory>
+			<SoftwareCategory Category="Phone">1999</SoftwareCategory>
+		</Feature>
+		<Feature>
+			<Name>Backup (Manual)</Name>
+			<Description>A system to allow easy, but still manual, backups - IE an export, import system with its own unique file types and compression of the backup files</Description>
+			<Category>System</Category>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">1973</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2006</SoftwareCategory>
+		</Feature>
+		<Feature>
+			<Name>Backup (Automated)</Name>
+			<Description>An automated system to allow easy backup - IE an export, import system with its own unique file types and compression of the backup files</Description>
+			<Category>System</Category>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>5</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">1993</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2010</SoftwareCategory>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Neurofeedback input system</Name>
+			<Description>Allow the user to directly interact with a holo-UI via a neural interface device</Description>
+			<Category>UI</Category>
+			<DevTime>5</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Text input system</Dependency>
+			<Dependency Software="Operating System">Pointer input system</Dependency>
+			<SoftwareCategory Category="Computer">2023</SoftwareCategory>
+			<SoftwareCategory Category="Console">2025</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2027</SoftwareCategory>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Terminal</Name>
+			<Description>The terminal is the classic text-based interface between the Operating System and the user.</Description>
+			<Category>UI</Category>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>4</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Dot Rendering</Name>
+			<Category>System</Category>
+		    <ArtCategory>2D</ArtCategory>
+            <Description>Woo, dots.</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.8</CodeArt>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>GUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Description>The Graphical User Interface allow users to actually visualize what they are doing. No longer will they be bound to inputting one line at a time.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.7</CodeArt>
+			<Dependency Software="Operating System">Pointer input system</Dependency>
+			<Dependency Software="Operating System">Dot Rendering</Dependency>
+			<SoftwareCategory Category="Computer">1975</SoftwareCategory>
+			<SoftwareCategory Category="Console">1975</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+		</Feature>
+		<Feature From="Dot Rendering" Vital="TRUE">
+			<Name>2D rendering</Name>
+			<Category>System</Category>
+			<Description>Advanced 2D rendering, a significant improvement on simple dot drawings</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Dot Rendering</Dependency>
+			<SoftwareCategory Category="Computer">1980</SoftwareCategory>
+			<SoftwareCategory Category="Console">1981</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>3D rendering</Name>
+			<Description>Rendering, in 3 dimensions</Description>
+			<Category>3D</Category>
+			<Description></Description>
+			<DevTime>4</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">GUI</Dependency>
+			<SoftwareCategory Category="Computer">1983</SoftwareCategory>
+			<SoftwareCategory Category="Console">1983</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2004</SoftwareCategory>
+		</Feature>
+		<Feature From="3D rendering" Vital="True">
+			<Name>Integral Graphics API</Name>
+			<Description>Just like OpenGL! Or that proprietry one</Description>
+			<Category>3D</Category>
+			<Description></Description>
+			<DevTime>5</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.9</CodeArt>
+			<Dependency Software="Operating System">3D rendering</Dependency>
+			<SoftwareCategory Category="Computer">1997</SoftwareCategory>
+			<SoftwareCategory Category="Console">2000</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2006</SoftwareCategory>
+		</Feature>
+		<Feature From="Integral Graphics API" Vital="True">
+			<Name>Advanced Integral Graphics API</Name>
+			<Description>Much more advanced featureset - now consumers can enjoy extra hot hardware</Description>
+			<Category>3D</Category>
+			<Description></Description>
+			<DevTime>6</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.9</CodeArt>
+			<Dependency Software="Operating System">Integral Graphics API</Dependency>
+			<Dependency Software="Operating System">Simultaneous Multithreading</Dependency>
+			<SoftwareCategory Category="Computer">2010</SoftwareCategory>
+			<SoftwareCategory Category="Console">2012</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2014</SoftwareCategory>
+		</Feature>
+		<Feature From="Advanced Integral Graphics API" Vital="True">
+			<Name>Integral Holographic API</Name>
+			<Description>Real 3D. Not that stupid fake stuff on a screen like in the dark ages</Description>
+			<Category>Holography</Category>
+			<Description></Description>
+			<DevTime>8</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.9</CodeArt>
+			<Dependency Software="Operating System">Advanced Integral Graphics API</Dependency>
+			<SoftwareCategory Category="Computer">2020</SoftwareCategory>
+			<SoftwareCategory Category="Console">2022</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2025</SoftwareCategory>
+		</Feature>
+			<Feature Vital="TRUE" From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+			<SoftwareCategory Category="Computer">2020</SoftwareCategory>
+			<SoftwareCategory Category="Console">2022</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2025</SoftwareCategory>
+		</Feature>
+		<Feature>
+			<Name Vital="TRUE">Plug'n'Play</Name>
+			<Category>System</Category>
+			<Description>Allow the user to interact with the operating system in any number of ways</Description>
+			<DevTime>4</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Text input system</Dependency>
+			<Dependency Software="Operating System">Pointer input system</Dependency>
+			<SoftwareCategory Category="Computer">1985</SoftwareCategory>
+			<SoftwareCategory Category="Console">1990</SoftwareCategory>
+		</Feature>
+		<Feature>
+			<Name>Touch</Name>
+			<Category>UI</Category>
+			<Description>You can never have enough greasy finger prints on a surface</Description>
+			<DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Text input system</Dependency>
+			<Dependency Software="Operating System">Pointer input system</Dependency>
+			<SoftwareCategory Category="Computer">2002</SoftwareCategory>
+			<SoftwareCategory Category="Console">2005</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Block Multithreading</Name>
+			<Category>System</Category>
+			<Description>Multithreading allows the Operating System to run mulitple threads at the same time by continually switching between them intelligently, speeding up applications and confusing developers to no end.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">0</SoftwareCategory>
+			<SoftwareCategory Category="Console">1985</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+		</Feature>
+		<Feature From="Block Multithreading" Vital="True">
+			<Name>Simultaneous Multithreading</Name>
+			<Category>System</Category>
+			<Description>Often given catchier names, SMT is more effective than its predecessors, barrel multithreading and interleaved multithreading</Description>
+			<DevTime>2</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">2007</SoftwareCategory>
+			<SoftwareCategory Category="Console">2010</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2014</SoftwareCategory>
+			<Dependency Software="Operating System">Block Multithreading</Dependency>
+		</Feature>	
+		<Feature Vital="TRUE">
+			<Name>Multitasking</Name>
+			<Category>System</Category>
+			<Description>Let your users pretend they can multitask by having several applications open at any one time.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">0</SoftwareCategory>
+			<SoftwareCategory Category="Console">1980</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+			<Dependency Software="Operating System">Block Multithreading</Dependency>
+		</Feature>
+		<Feature From="Multitasking" Vital="True">
+			<Name>Preemptive Multitasking</Name>
+			<Category>System</Category>
+			<Description>Now privileged tasks can interrupt less privileged tasks; it's a class system inside your computer!</Description>
+			<DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">1987</SoftwareCategory>
+			<SoftwareCategory Category="Console">1989</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+			<Dependency Software="Operating System">Multitasking</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Task Switching</Name>
+			<Category>2D</Category>
+			<Description>For the end user, the ability to graphically swiftly switch between tasks (either by keyboard shortcut or other HID input) is usually seen as a superior option to cascading or tiling windows; this includes things like taskbars, alt-tabbing, etc</Description>
+			<DevTime>2</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.4</CodeArt>
+			<SoftwareCategory Category="Computer">1990</SoftwareCategory>
+			<SoftwareCategory Category="Console">2020</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2010</SoftwareCategory>
+			<Dependency Software="Operating System">Multitasking</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Networking</Name>
+			<Category>Network</Category>
+			<Description>How will anonymous people troll each other all over the world without this handy feature?</Description>
+			<DevTime>6</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">1985</SoftwareCategory>
+			<SoftwareCategory Category="Console">1985</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>64-bit</Name>
+			<Category>System</Category>
+			<Description>Doubles the size of bits per register, allowing for bigger numbers, more memory, larger files, the answer to life, etc.</Description>
+			<DevTime>4</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>3</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Computer">1993</SoftwareCategory>
+			<SoftwareCategory Category="Console">1995</SoftwareCategory>
+			<SoftwareCategory Category="Phone">2000</SoftwareCategory>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>PC speaker</Name>
+			<Category>Audio</Category>
+			<Description>For all your beeping needs</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.9</CodeArt>
+		</Feature>
+		<Feature From="PC speaker" Vital="TRUE">
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.78</CodeArt>
+			<SoftwareCategory Category="Computer">1984</SoftwareCategory>
+			<SoftwareCategory Category="Console">1984</SoftwareCategory>
+			<SoftwareCategory Category="Phone">1984</SoftwareCategory>
+		</Feature>
+		<Feature From="8-bit audio" Vital="TRUE">
+			<Name>HD audio</Name>
+			<Category>Audio</Category>
+			<Description>Like 8-bit audio, but with more bit</Description>
+			<DevTime>4</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.9</CodeArt>
+			<SoftwareCategory Category="Computer">1988</SoftwareCategory>
+			<SoftwareCategory Category="Console">1988</SoftwareCategory>
+			<SoftwareCategory Category="Phone">1988</SoftwareCategory>
+		</Feature>
+	</Features>
+</SoftwareType>

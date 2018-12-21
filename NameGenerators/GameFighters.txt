@@ -1,0 +1,14 @@
+-start(base)
+-base(base2)
+Street
+Beat
+Cheat
+For The  
+-base2(end,stop)
+Smasher
+fist
+War
+Fight
+Right
+Party
+-end(stop)

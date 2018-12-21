@@ -1,0 +1,24 @@
+[REPLACE]
+-start(base)
+-base(base2,stop)
+Circlex 
+Nominal 
+Unify 
+Spiral 
+Trinity
+Trivial
+eXpand 
+Mic
+Wind
+Ubu
+Trynex
+Wontek
+-base2(end,stop)
+ NT
+ Vital
+ Works
+ Core
+ OS
+ Operating System
+ Kernel
+-end(stop)

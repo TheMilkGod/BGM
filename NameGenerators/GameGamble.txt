@@ -1,0 +1,19 @@
+-start(base)
+-base(base2)
+Smart
+Easy
+149
+283
+572
+Gamble
+Poker
+Blackjack
+Pontoon
+O Snap: 
+-base2(end,stop)
+Gamble
+Bet
+ CashWinner
+ Moneyfare
+ Fairbet
+-end(stop)

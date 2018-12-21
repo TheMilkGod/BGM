@@ -1,0 +1,27 @@
+[REPLACE]
+-start(base)
+-base(base2)
+Harry McHarryson's 
+Sporty Dudertype's 
+Kicker McCatchyfist's 
+Bouncy McBoingington's 
+Jumpy Andrunnering's 
+Slidey McSkateypants' 
+Whooshy Runfast's 
+Flyhigh Jumpfast O'Skaterysliderski's 
+Toe'kehn Furrin-Sahndin's 
+Sven Gorran-Erikson's 
+-base2(end,stop)
+Cricket Smash
+Quick Cricket
+Silly Wickets
+Basketball
+Soccer
+Football
+Rugby
+Lacrosse
+Athletics
+Curling
+Field Hockey
+Ice Hockey
+-end(stop)

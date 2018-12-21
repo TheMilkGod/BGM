@@ -1,0 +1,21 @@
+-start(base)
+-base(base2)
+Jewel 
+Cat 
+Dog 
+Donkey 
+Fish 
+Egg 
+Sparrow 
+Justice 
+Owl 
+-base2(end,stop)
+Raider
+Runner
+Finder
+Seeker
+Go Sprint
+Dasher!
+Faster! Further!
+Become
+-end(stop)

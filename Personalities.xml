@@ -1,0 +1,112 @@
+<PersonalityGraph Replace="True">
+	<Personalities>
+		<Personality>
+			<Name>Agreeable</Name>
+			<WorkLearn>-1</WorkLearn>
+			<Social>1</Social>
+			<LazyStress>0</LazyStress>
+			<Relationships>
+				<Relation Name = "Disagreeable">-0.5</Relation>
+				<Relation Name = "Careful">+0.7</Relation>
+				<Relation Name = "Impetuous">+0.7</Relation>
+				<Relation Name = "Radical">+0.7</Relation>
+				<Relation Name = "Conservative">+2</Relation>
+				<Relation Name = "Labile">+0.5</Relation>
+				<Relation Name = "Stabile">+0.65</Relation>
+			</Relationships>
+		</Personality>
+		<Personality>
+			<Name>Disagreeable</Name>
+			<WorkLearn>1</WorkLearn>
+			<Social>-1</Social>
+			<LazyStress>1</LazyStress>
+			<Relationships>
+				<Relation Name = "Agreeable">-0.5</Relation>
+				<Relation Name = "Careful">-0.6</Relation>
+				<Relation Name = "Impetuous">-0.75</Relation>
+				<Relation Name = "Radical">0</Relation>
+				<Relation Name = "Conservative">-0.7</Relation>
+				<Relation Name = "Labile">-0.65</Relation>
+				<Relation Name = "Stabile">-0.65</Relation>
+			</Relationships>
+		</Personality>
+		<Personality>
+			<Name>Careful</Name>
+			<WorkLearn>1</WorkLearn>
+			<Social>0</Social>
+			<LazyStress>0</LazyStress>
+			<Relationships>
+				<Relation Name = "Impetuous">-0.55</Relation>
+			</Relationships>
+		</Personality>
+		<Personality>
+			<Name>Impetuous</Name>
+			<WorkLearn>-1</WorkLearn>
+			<Social>1</Social>
+			<LazyStress>-1</LazyStress>
+			<Relationships>
+				<Relation Name = "Radical">+2</Relation>
+				<Relation Name = "Careful">-0.75</Relation>
+			</Relationships>
+		</Personality>
+		<Personality>
+			<Name>Radical</Name>
+			<WorkLearn>1</WorkLearn>
+			<Social>1</Social>
+			<LazyStress>1</LazyStress>
+			<Relationships>
+				<Relation Name = "Conservative">-2</Relation>
+				<Relation Name = "Impetuous">+2</Relation>
+			</Relationships>
+		</Personality>
+		<Personality>
+			<Name>Conservative</Name>
+			<WorkLearn>0</WorkLearn>
+			<Social>1</Social>
+			<LazyStress>0</LazyStress>
+			<Relationships>
+				<Relation Name = "Radical">-1</Relation>
+			</Relationships>
+		</Personality>
+		<Personality>
+			<Name>Labile</Name>
+			<WorkLearn>1</WorkLearn>
+			<Social>-1</Social>
+			<LazyStress>-1</LazyStress>
+			<Relationships>
+				<Relation Name = "Stabile">+0.65</Relation>
+				<Relation Name = "Radical">+1</Relation>
+				<Relation Name = "Careful">-0.75</Relation>
+			</Relationships>
+		</Personality>
+		<Personality>
+			<Name>Stabile</Name>
+			<WorkLearn>-1</WorkLearn>
+			<Social>0</Social>
+			<LazyStress>1</LazyStress>
+			<Relationships>
+				<Relation Name = "Careful">+0.65</Relation>
+				<Relation Name = "Labile">-0.65</Relation>
+				<Relation Name = "Conservative">1</Relation>
+			</Relationships>
+		</Personality>
+	</Personalities>
+	<Incompatibilities>
+		<Incompatible>
+				<Personality>Agreeable</Personality>
+				<Personality>Disagreeable</Personality>
+		</Incompatible>
+		<Incompatible>
+				<Personality>Careful</Personality>
+				<Personality>Impetuous</Personality>
+		</Incompatible>
+		<Incompatible>
+				<Personality>Radical</Personality>
+				<Personality>Conservative</Personality>
+		</Incompatible>
+		<Incompatible>
+				<Personality>Labile</Personality>
+				<Personality>Stabile</Personality>
+		</Incompatible>
+	</Incompatibilities>
+</PersonalityGraph>

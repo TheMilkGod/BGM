@@ -1,0 +1,257 @@
+<SoftwareType>
+	<Name>Office Software</Name>
+	<Category>Office</Category>
+	<Unlock>1970</Unlock>
+	<Description></Description>
+	<Random>0.2</Random>
+	<Popularity>0.7</Popularity>
+	<Retention>0.4</Retention>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>False</InHouse>
+	<Iterative>1</Iterative>
+	<NameGenerator>Office</NameGenerator>
+	<IdealPrice>59.99</IdealPrice>
+	<Features>
+		<Feature Forced="True">
+			<Name>Text Editor</Name>
+			<Category>2D</Category>
+			<Description>Glorious.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Word processor</Name>
+			<Category>2D</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1974</Unlock>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>WYSIWYG</Name>
+			<Category>2D</Category>
+			<Description>What You See Is What You Get</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1978</Unlock>
+			<Dependency Software="Office Software">Word processor</Dependency>
+			<Dependency Software="Operating System">GUI</Dependency>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Spellcheck</Name>
+			<Description>Now you can ignore typographical errors until later! Maybe!</Description>
+			<Category>Databases</Category>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1980</Unlock>
+			<Dependency Software="Office Software">Word processor</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Auto layout</Name>
+			<Description>A little to the left... No, the other left</Description>
+			<Category>2D</Category>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>5</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.8</CodeArt>
+			<Unlock>1983</Unlock>
+			<Dependency Software="Operating System">GUI</Dependency>
+			<Dependency Software="Office Software">Word processor</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Spreadsheet</Name>
+			<Description>AKA "maths disguised as words"</Description>
+			<Category>Databases</Category>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1970</Unlock>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Enhanced Text Editor</Name>
+			<Description>With enhancements for coding.</Description>
+			<Category>2D</Category>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.8</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Custom functions</Name>
+			<Description>Extra magic for your spreadsheet wizardry needs</Description>
+			<Category>Algorithm</Category>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1982</Unlock>
+			<Dependency Software="Office Software">Spreadsheet</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Charts</Name>
+			<Category>Databases</Category>
+			<Description></Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.75</CodeArt>
+			<Unlock>1979</Unlock>
+			<Dependency Software="Office Software">Spreadsheet</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Presentation</Name>
+			<Category>2D</Category>
+			<Description>Hurrah for slideshows!</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1979</Unlock>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Vector graphics</Name>
+			<Category>2D</Category>
+			<Description>Not-really-infinitely-but-sortof-unendingly scaleable line graphics</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Presentation</Dependency>
+			<Dependency Software="Operating System">GUI</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Animations</Name>
+			<Category>2D</Category>
+			<Description>Now things go swoosh</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.75</CodeArt>
+			<Dependency Software="Office Software">Presentation</Dependency>
+			<Dependency Software="Operating System">GUI</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Sound effects</Name>
+			<Category>Audio</Category>
+			<Description>And this is our projected earnings for the next fiscal year *pew* *pew*</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="Office Software">Presentation</Dependency>
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Templates</Name>
+			<Category>Databases</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Description>For when you need things to be like other things, but not entirely the same</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="Operating System">GUI</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Clipart</Name>
+			<Category>Databases</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Description>For when things need to just look creative</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.2</CodeArt>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+			<Dependency Software="Operating System">GUI</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Scripting</Name>
+			<Description>Because spreadsheets can't be complicated enough</Description>
+			<Category>Algorithm</Category>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Spreadsheet</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Email Client</Name>
+			<Description>Get your mail!</Description>
+			<Category>Network</Category>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Networking</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Online backup</Name>
+			<Description>A great reason to build a server farm</Description>
+			<Category>Network</Category>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Server>0.040</Server>
+			<Dependency Software="Operating System">Networking</Dependency>
+		</Feature>
+		<Feature>
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

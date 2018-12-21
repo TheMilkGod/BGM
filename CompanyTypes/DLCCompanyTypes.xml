@@ -1,0 +1,9 @@
+<CompanyType>
+	<Specialization>DLC</Specialization>
+	<PerYear>0.5</PerYear>
+	<Min>1</Min>
+	<Max>8</Max>
+	<Types>
+		<Type Software="DLC">1</Type>
+	</Types>
+</CompanyType>

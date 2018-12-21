@@ -1,0 +1,15 @@
+-start(base)
+-base(base2,stop)
+file
+-base2(end,stop)
+swap
+transfer
+move
+sendanreceivinator
+monster
+exchanger
+swift
+leader
+master
+warrior
+-end(stop)

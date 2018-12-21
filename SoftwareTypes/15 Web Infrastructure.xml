@@ -1,0 +1,109 @@
+<SoftwareType>
+<Name>Web Server</Name>
+	<Category>Web</Category>
+	<Description>Critical if you want websites, really</Description>
+	<Unlock>1991</Unlock>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>False</InHouse>
+	<Random>0.13</Random>
+	<Categories>
+			<Category Name="Lightweight Webserver">
+			<Description>For all your low-end, low-cost needs</Description>
+			<Popularity>0.05</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>0.2</TimeScale>
+			<Iterative>1</Iterative>
+			<Random>0.18</Random>
+			<NameGenerator>littlewebserver</NameGenerator>
+			<IdealPrice>13.99</IdealPrice>
+		</Category>
+		<Category Name="Featureful Webserver">
+			<Description>Bigger, maybe better</Description>
+			<Popularity>0.15</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>1</TimeScale>
+			<Iterative>0.8</Iterative>
+			<Random>0.05</Random>
+			<IdealPrice>79.95</IdealPrice>
+			<NameGenerator>webserver</NameGenerator>
+		</Category>
+	</Categories>
+	<Features>
+		<Feature Forced="TRUE">
+			<Name>Worker Threads</Name>
+			<Description>Doing the things and the stuff</Description>
+			<Category>System</Category>
+			<DevTime>6</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Block Multithreading</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Tutorials and Documentation</Name>
+			<Category>Writing</Category>
+			<Description>People need to know how to use the bloody thing</Description>
+			<DevTime>3</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.2</CodeArt>
+			<Dependency Software="Web Server">Worker Threads</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Databases Integration</Name>
+			<Category>Databases</Category>
+			<Description>Put that thing from a thing 200 miles away from this thing into this thing and make it do those things on that screen 9,000 miles away and then act like it ain't no thang</Description>
+			<DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>2000</Unlock>
+			<Dependency Software="Web Server">Worker Threads</Dependency>
+			<Dependency Software="Databases">Event Notification</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Custom Modules</Name>
+			<Category>Databases</Category>
+			<Description>Modules! Everyone loves those</Description>
+			<DevTime>3</DevTime>
+			<Innovation>4</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Featureful Webserver">2002</SoftwareCategory>
+			<Dependency Software="Web Server">Worker Threads</Dependency>
+			<Dependency Software="Databases">User-Defined Functions</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>64-bit Enhancements</Name>
+			<Category>System</Category>
+			<Description>Also known as fasterness</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">64-bit</Dependency>
+			<Dependency Software="Web Server">Worker Threads</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>File compression</Name>
+			<Category>Algorithm</Category>
+			<Unlock>1988</Unlock>
+			<Description>Make things move faster by making them smallerer</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+	</Features>
+</SoftwareType>

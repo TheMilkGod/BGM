@@ -1,0 +1,57 @@
+<SoftwareType>
+	<Name>Game Asset</Name>
+	<Category>Game</Category>
+	<Description>Game Assets are what help create to world and bring it to life</Description>
+	<Random>0.13</Random>
+	<Popularity>0.00015</Popularity>    
+    <Retention>0.7</Retention>
+    <Iterative>0.5</Iterative>
+	<OSSpecific>False</OSSpecific>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<IdealPrice>27.94</IdealPrice>
+	<Categories>
+		<Category Name="Custom Model">
+			<Description>Create A Custom Model To Sell To Other Game Companies To Put Into Their Game</Description>
+			<Popularity>0.8</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>0.8</TimeScale>
+			<Iterative>0.9</Iterative>
+			<NameGenerator>GameAsset</NameGenerator>
+			<IdealPrice>39.99</IdealPrice>
+		</Category>
+		<Category Name="3D Asset">
+			<Description>Create A 3D Asset To Sell To Other Game Companies To Put Into Their Game</Description>
+			<Popularity>0.8</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>0.8</TimeScale>
+			<Iterative>0.9</Iterative>
+			<NameGenerator>GameAsset</NameGenerator>
+			<IdealPrice>39.99</IdealPrice>
+		</Category>		
+	</Categories>
+    <Features>
+        <Feature Forced="True">
+            <Name>Custom Scripting</Name>
+			<Category>Databases</Category>
+			<ArtCategory>Writing</ArtCategory>
+            <Description>Script This Asset To Do Something, Like Explode</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+		</Feature>
+        <Feature Forced="True">
+            <Name>Custom Modeling</Name>
+			<Category>Databases</Category>
+			<ArtCategory>Writing</ArtCategory>
+            <Description>Model This Asset To Look Realistic And Good</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+		</Feature>
+    </Features>
+</SoftwareType>

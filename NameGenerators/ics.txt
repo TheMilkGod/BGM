@@ -1,0 +1,12 @@
+-start(base)
+-base(base2,stop)
+System 
+Systemising 
+Systemised 
+-base2(end,stop) 
+Systems 
+Control Software 
+: Aspiration 
+sorter 
+Integrated Thing 
+-end(stop) 

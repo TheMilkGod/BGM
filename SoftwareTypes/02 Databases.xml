@@ -1,0 +1,114 @@
+<SoftwareType>
+	<Name>Databases</Name>
+	<Category>Databases</Category>
+	<Description>All your data are base for us</Description>
+	<Random>0.35</Random>
+	<Popularity>0.4</Popularity>    
+    <Retention>0.75</Retention>
+    <Iterative>1</Iterative>
+	<OSSpecific>False</OSSpecific>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<NameGenerator>databases</NameGenerator>
+	<IdealPrice>199.99</IdealPrice>
+    <Features>
+        <Feature Forced="True">
+            <Name>CLI</Name>
+			<Category>UI</Category>
+            <Description>Everything via command-line. Laborious "fun".</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>4</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature From="CLI">
+            <Name>GUI</Name>
+            <Category>2D</Category>
+            <Description>Everything not on the command line, which really is a relief with Databases</Description>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>0.6</CodeArt>
+			<Unlock>1975</Unlock>
+			<Dependency Software="Databases">CLI</Dependency>
+        </Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+		</Feature>
+		<Feature Forced="True">
+            <Name>Databases</Name>
+			<Category>Databases</Category>
+            <Description>Vital to literally everything that matters</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>3</Usability>
+			<Stability>3</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Search</Name>
+			<Category>Databases</Category>
+            <Description>For finding specific types of things and stuff</Description>
+            <DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Statistics</Name>
+			<Category>Databases</Category>
+            <Description>You cannot understand data without analysing data</Description>
+            <DevTime>4</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<Unlock>1975</Unlock>
+        </Feature>
+		<Feature>
+            <Name>Event Notification</Name>
+			<Category>Databases</Category>
+            <Description>You need to know when numbers change? This tells you numbers have changed</Description>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Table Compression</Name>
+			<Category>Databases</Category>
+			<Category>Algorithm</Category>
+            <Description>For when you like some numbers very small</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>            
+			<CodeArt>1</CodeArt>
+			<Unlock>1986</Unlock>
+        </Feature>
+		<Feature>
+            <Name>User-Defined Functions</Name>
+			<Category>Databases</Category>
+            <Description>For making numbers into other numbers in ways that the developer didn't foresee</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>           
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+        </Feature>
+    </Features>
+</SoftwareType>

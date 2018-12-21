@@ -1,0 +1,9 @@
+<CompanyType>
+	<Specialization>Project Management Systems</Specialization>
+	<PerYear>0.2</PerYear>
+	<Min>2</Min>
+	<Max>3</Max>
+	<Types>
+		<Type Software="Enterprise" Category="Project Management Software">1</Type>
+	</Types>
+</CompanyType>

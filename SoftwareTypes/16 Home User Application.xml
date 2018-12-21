@@ -1,0 +1,185 @@
+<SoftwareType>
+	<Name>Home User Application</Name>
+	<Category>Home Computing</Category>
+	<Description>Premium versions of basic software, these enhance the user experience. Power tools for power users</Description>
+	<Random>0.1</Random> 
+    <Retention>0.8</Retention>
+    <Iterative>1</Iterative>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<IdealPrice>39.95</IdealPrice>
+    <Categories>
+        <Category Name="File Archiver">
+            <Description>For all your secure remote access needs</Description>
+			<Unlock>1980</Unlock>
+            <Popularity>0.3</Popularity>
+			<Retention>0.8</Retention>
+			<Iterative>1</Iterative>
+            <TimeScale>0.4</TimeScale>
+            <NameGenerator>archiver</NameGenerator>
+			<Dependency Software="Databases">Databases</Dependency>
+        </Category>
+		<Category Name="File Commander">
+            <Description>For all your file sorting needs</Description>
+			<Unlock>1980</Unlock>
+            <Popularity>0.4</Popularity>
+			<Retention>0.8</Retention>
+			<Iterative>1</Iterative>
+            <TimeScale>0.4</TimeScale>
+            <NameGenerator>filecommander</NameGenerator>
+        </Category>
+		<Category Name="Task Manager">
+            <Description>For killing processes in a fashion fractionally superior to whatever your OS lets you do</Description>
+			<Unlock>1995</Unlock>
+            <Popularity>0.3</Popularity>
+			<Retention>0.9</Retention>
+			<Iterative>1</Iterative>
+            <TimeScale>0.4</TimeScale>
+            <NameGenerator>taskmanager</NameGenerator>
+        </Category>
+		<Category Name="Power Tools Bundle">
+			<Description>Mmm, bundly</Description>
+			<Popularity>0.5</Popularity>
+			<Retention>0.7</Retention>
+			<Iterative>0.7</Iterative>
+            <TimeScale>0.4</TimeScale>
+            <NameGenerator>powertools</NameGenerator>
+		</Category>
+    </Categories>
+    <Features>
+        <Feature Forced="True">
+            <Name>CLI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <Description>Such very much typing</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>4</Stability>
+			<CodeArt>1</CodeArt>
+            <Dependency Software="Operating System">Terminal</Dependency>
+        </Feature>
+		<Feature From="CLI">
+            <Name>GUI</Name>
+			<Category>UI</Category>
+            <ArtCategory>2D</ArtCategory>
+            <Description>So many click</Description>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability> 
+			<CodeArt>0.6</CodeArt>
+            <Dependency Software="Operating System">GUI</Dependency>
+			<Dependency Software="Home User Application">CLI</Dependency>
+        </Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+		</Feature>
+		<Feature Forced="True">
+            <Name>File Management</Name>
+			<Category>Databases</Category>
+            <Description>For managing files</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>3</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Power Tools Bundle">0</SoftwareCategory>
+			<SoftwareCategory Category="File Archiver">0</SoftwareCategory>
+			<SoftwareCategory Category="File Commander">0</SoftwareCategory>
+			<Dependency Software="Databases">Statistics</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Compression</Name>
+			<Category>Algorithm</Category>
+            <Description>For files, the opposite of obesity</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Power Tools Bundle">0</SoftwareCategory>
+			<SoftwareCategory Category="File Archiver">0</SoftwareCategory>
+			<Dependency Software="Databases">Statistics</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Task Management</Name>
+			<Category>Databases</Category>
+            <Description>Without this, a Task Manager has pretty much the same utility as a steak knife to a lion</Description>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Power Tools Bundle">0</SoftwareCategory>
+			<SoftwareCategory Category="Task Manager">0</SoftwareCategory>
+            <Dependency Software="Databases">Statistics</Dependency>
+        </Feature>
+		<Feature>
+			<Name>Process Management</Name>
+			<Category>Databases</Category>
+            <Description>Without this, a Task Manager has pretty much the same utility as a steak knife to a lion</Description>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Power Tools Bundle">2005</SoftwareCategory>
+			<SoftwareCategory Category="Task Manager">2005</SoftwareCategory>
+            <Dependency Software="Home User Application">Task Management</Dependency>
+        </Feature>
+		<Feature>
+			<Name>Network Management</Name>
+			<Category>Databases</Category>
+            <Description>Without this, a Task Manager has pretty much the same utility as a steak knife to a lion</Description>
+            <DevTime>1</DevTime>
+			<Category>Network</Category>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Power Tools Bundle">2007</SoftwareCategory>
+			<SoftwareCategory Category="Task Manager">2007</SoftwareCategory>
+            <Dependency Software="Home User Application">Task Management</Dependency>
+			<Dependency Software="Operating System">Networking</Dependency>
+        </Feature>
+		<Feature>
+			<Name>Disk Management</Name>
+			<Category>Databases</Category>
+            <Description>Without this, a Task Manager has pretty much the same utility as a steak knife to a lion</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Power Tools Bundle">2003</SoftwareCategory>
+			<SoftwareCategory Category="Task Manager">2003</SoftwareCategory>
+            <Dependency Software="Home User Application">Task Management</Dependency>
+        </Feature>
+		<Feature>
+			<Name>Clean Your Files!</Name>
+			<Category>Algorithm</Category>
+            <Description>Both utterly useless and utterly useful. It depends who you ask, doesn't it?</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Power Tools Bundle">1995</SoftwareCategory>
+			<SoftwareCategory Category="Task Manager">1995</SoftwareCategory>
+            <Dependency Software="Home User Application">Task Management</Dependency>
+        </Feature>
+    </Features>
+</SoftwareType>

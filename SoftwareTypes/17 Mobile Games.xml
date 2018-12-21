@@ -1,0 +1,689 @@
+<SoftwareType>
+	<Name>Phone Game</Name>
+	<Category>Phone Games</Category>
+	<Description>Phone (and phablet, tablet, etc) games are things that play you. Maybe that's the wrong way around</Description>
+	<Random>0.4</Random>
+	<Popularity>0.00530</Popularity>    
+    <Retention>0.2</Retention>
+    <Iterative>0.001</Iterative>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Phone</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<Unlock>1995</Unlock>
+	<IdealPrice>1.75</IdealPrice>
+	<Categories>
+			<Category Name="Puzzle">
+			<Description>Make all the colours do the thing in the right way, not the wrong way</Description>
+			<Popularity>0.9</Popularity>
+			<Retention>0.4</Retention>
+			<TimeScale>0.3</TimeScale>
+			<Iterative>1</Iterative>
+			<Unlock>1995</Unlock>
+			<NameGenerator>GamePuzzle</NameGenerator>
+		</Category>
+		<Category Name="Adventure">
+			<Description>Let's go to Candy Mountain!</Description>
+			<Popularity>0.4</Popularity>
+			<Retention>0.4</Retention>
+			<TimeScale>0.3</TimeScale>
+			<Iterative>0.2</Iterative>
+			<Unlock>1995</Unlock>
+			<NameGenerator>GameAdventureMobile</NameGenerator>
+		</Category>
+		<Category Name="Alternate Reality">
+			<Description>Geocaching, something about monsters in your trousers...</Description>
+			<Popularity>0.5</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>2</TimeScale>
+			<Iterative>1</Iterative>
+			<Unlock>2008</Unlock>
+			<NameGenerator>GameAR</NameGenerator>
+		</Category>
+		<Category Name="Strategy">
+			<Description>Think do act say become. Also strange boobies ads</Description>
+			<Popularity>0.7</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>0.4</TimeScale>
+			<Iterative>0.95</Iterative>
+			<Unlock>1998</Unlock>
+			<NameGenerator>GameStratMobile</NameGenerator>
+		</Category>
+		<Category Name="Action">
+			<Description>Bam biff boom whap wallop kapow! Ziiiiiing! LEVEL UP! Whoosh bang!</Description>
+			<Popularity>0.8</Popularity>
+			<Retention>0.7</Retention>
+			<TimeScale>0.2</TimeScale>
+			<Iterative>0.95</Iterative>
+			<Unlock>1995</Unlock>
+			<NameGenerator>GameActMobile</NameGenerator>
+		</Category>
+		<Category Name="Gambling">
+			<Description>Addict moar!</Description>
+			<Popularity>0.85</Popularity>
+			<Retention>1.0</Retention>
+			<TimeScale>0.1</TimeScale>
+			<IdealPrice>0.99</IdealPrice>
+			<Iterative>1.0</Iterative>
+			<Unlock>2000</Unlock>
+			<NameGenerator>GameGamble</NameGenerator>
+		</Category>
+		<Category Name="Infinite Racer">
+			<Description>Ruuuuuuuuun</Description>
+			<Popularity>0.78</Popularity>
+			<Retention>0.3</Retention>
+			<TimeScale>0.2</TimeScale>
+			<IdealPrice>1.20</IdealPrice>
+			<Iterative>0.75</Iterative>
+			<Unlock>1995</Unlock>
+			<NameGenerator>GameRunRunRun</NameGenerator>
+		</Category>
+	</Categories>
+    <Features>
+        <Feature Forced="True">
+            <Name>Worldbuilding</Name>
+			<Category>Databases</Category>
+			<ArtCategory>Writing</ArtCategory>
+            <Description>Text is the core of any game, and this is that. Story, background, etc</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature Vital="True">
+		    <Name>Simple help system</Name>
+			<Category>Databases</Category>
+			<ArtCategory>Writing</ArtCategory>
+            <Description>Basic tooltips</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature From="Simple help system">
+			<Name>Complex help system</Name>
+			<Category>Databases</Category>
+			<ArtCategory>Writing</ArtCategory>
+            <Description>Tooltips, complicated tutorials, etc</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="Phone Game">Simple help system</Dependency>
+			<Dependency Software="Databases">User-Defined Functions</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Single Playscreen</Name>
+			<Category>2D</Category>
+			<Description>Yup. Literally just one screen. That's the entire game. If this is an adventure, of course, that one screen will be text. Otherwise, think Pong, or Asteroids</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.6</CodeArt>			
+		</Feature>
+		<Feature From="Single Playscreen" Vital="True">
+			<Name>2D rendering</Name>
+			<Category>2D</Category>
+			<Description>Everyone loves double D. Maybe even with colour.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>	
+			<Dependency Software="Phone Game">Single Playscreen</Dependency>
+		</Feature>
+		<Feature From="2D rendering">
+			<Name>Wireframe 3D</Name>
+			<Category>3D</Category>
+			<Description>Triple your D, but early. There are colours.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Phone Game">2D rendering</Dependency>
+		</Feature>
+		<Feature From="Wireframe 3D" Vital="TRUE">
+			<Name>3D rendering</Name>
+			<Category>3D</Category>
+			<Description>Triple your D but now with other stuff filling the stuff so it's much more stuff than before. COLOURS EVERYWHERE</Description>
+			<DevTime>3</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Phone Game">2D rendering</Dependency>
+		</Feature>
+		<Feature From="3D rendering" Vital="TRUE">
+			<Name>GAPI Integration</Name>
+			<Category>3D</Category>
+			<Description>Hook into the OS' 2D and 3D graphics API and leverage driver capabilities for a superior end-user experience. tl;dr more pretty</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">Integral Graphics API</Dependency>
+			<Dependency Software="Phone Game">3D rendering</Dependency>
+		</Feature>
+		<Feature From="GAPI Integration" Vital="TRUE">
+			<Name>AGAPI Integration</Name>
+			<Category>3D</Category>
+			<Description>Hook into the OS' 2D and 3D "advanced" graphics API and leverage driver capabilities for a superior end-user experience. tl;dr even more pretty</Description>
+			<DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">Advanced Integral Graphics API</Dependency>
+			<Dependency Software="Phone Game">GAPI Integration</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Single-channel audio</Name>
+			<Category>Audio</Category>
+			<Description>Just Crackle.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>		
+		</Feature>
+		<Feature From="Single-channel audio">
+			<Name>Dual-channel audio</Name>
+			<Category>Audio</Category>
+			<Description>No, not Crackle and Pop. Hopefully.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>	
+			<Dependency Software="Phone Game">Single-channel audio</Dependency>
+		</Feature>
+		<Feature From="Dual-channel audio" Vital="True">
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Phone Game">Dual-channel audio</Dependency>
+		</Feature>
+		<Feature From="8-bit audio" Vital="True">
+			<Name>HD audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Phone Game">8-bit audio</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Touch support</Name>
+			<Category>UI</Category>
+			<Description>Poke it ;)</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Touch</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Advanced input</Name>
+			<Category>UI</Category>
+			<Description>Support for wheels, joysticks, etc.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0.3</Innovation>
+			<Usability>0.4</Usability>
+			<Stability>0.8</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Plug'n'Play</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Neurohaptics</Name>
+			<Category>Holography</Category>
+			<Description>A disco in your head! Hopefully not</Description>
+			<DevTime>4</DevTime>
+			<Innovation>4</Innovation>
+			<Usability>4</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2023</Unlock>
+			<Dependency Software="Operating System">Neurofeedback input system</Dependency>
+			<Dependency Software="Phone Game">Advanced input</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Motion capture</Name>
+			<Category>Databases</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.4</CodeArt>
+			<Dependency Software="Phone Game">3D rendering</Dependency>
+			<Dependency Software="3D Editor">Animation</Dependency>
+		</Feature>
+		<Feature>
+			<Name>2D art</Name>
+			<Category>2D</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="Phone Game">2D rendering</Dependency>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+		</Feature>
+		<Feature>
+			<Name>3D art</Name>
+			<Category>3D</Category>
+			<Description></Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="Phone Game">3D rendering</Dependency>
+			<Dependency Software="3D Editor">Vertex editing</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Simple Physics</Name>
+			<Category>Databases</Category>
+			<Description>What! Why apple go fally!</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>		
+			<Dependency Software="Operating System">Multitasking</Dependency>
+		</Feature>
+			<Feature>
+			<Name>Advanced Physics</Name>
+			<Category>Algorithm</Category>
+			<Description>e=mc^2</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>						
+			<Unlock>2012</Unlock>
+			<Dependency Software="Operating System">Block Multithreading</Dependency>
+		</Feature>
+			<Feature Forced="True">
+			<Name>Sequential Events</Name>
+			<Category>Databases</Category>
+			<Description>A. B. C. D. Not always as boring as it sounds here. Pacman was fun, right? And all those adventure games...</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.9</CodeArt>	
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>	
+		</Feature>
+		<Feature From="Sequential Events" Vital="True">
+			<Name>Dynamic Events</Name>
+			<Category>Algorithm</Category>
+			<Description>Doors can open. Maybe things can get set on fire. Things can explode. Whatever. This feature is things that require user input and that are events.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.9</CodeArt>						
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>	
+			<Dependency Software="Phone Game">Sequential Events</Dependency>
+		</Feature>
+		<Feature From="Dynamic Events" Vital="True">
+			<Name>Dynamic Storytelling</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>Writing</ArtCategory>
+			<Description>Not only are the events dynamic, but they tell a story.</Description>
+			<DevTime>4</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.6</CodeArt>		
+			<Dependency Software="Operating System">Block Multithreading</Dependency>
+			<Dependency Software="Phone Game">Sequential Events</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Pre-rendered cutscenes</Name>
+			<Category>3D</Category>
+			<Description>Exposition through animation, but not rendered by the game engine</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="3D Editor">Animation</Dependency>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>	
+		</Feature>
+		<Feature From="Pre-rendered cutscenes">
+			<Name>Simple in-engine cutscenes</Name>
+			<Category>3D</Category>
+			<Description>Cutscenes drawn by the game's rendering engine, dynamically, based on user actions.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>	
+			<Dependency Software="3D Editor">Animation</Dependency>			
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>	
+		</Feature>
+		<Feature From="Simple in-engine cutscenes">
+			<Name>Complex in-engine cutscenes</Name>
+			<Category>3D</Category>
+			<Description>Cutscenes drawn by the game's rendering engine, dynamically, based on user actions.</Description>
+			<DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>4</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.6</CodeArt>	
+			<Dependency Software="3D Editor">Animation</Dependency>
+			<Dependency Software="Phone Game">Simple in-engine cutscenes</Dependency>
+			<Dependency Software="Phone Game">Dynamic Storytelling</Dependency>
+		</Feature>
+			<Feature Vital="TRUE">
+            <Name>Puzzles</Name>
+			<Category>Databases</Category>
+			<ArtCategory>Writing</ArtCategory>
+            <Description>The meat of a puzzle or adventure game</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0.3</Innovation>
+			<Usability>0.5</Usability>
+			<Stability>0.7</Stability>
+			<CodeArt>0.5</CodeArt>
+			<SoftwareCategory Category="Puzzle">0</SoftwareCategory>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+            <Name>Combat system</Name>
+			<Category>Algorithm</Category>
+            <Description>How am destroy?!</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.6</CodeArt>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+            <Name>Procedurally Scheduled AI Events</Name>
+			<Category>Algorithm</Category>
+            <Description>Like in a game unmentionable that is puddle-deep and Pacific-wide</Description>
+			<DevTime>4</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.9</CodeArt>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+			<Dependency Software="Databases">User-Defined Functions</Dependency>
+		</Feature>
+		<Feature>
+            <Name>Hint system</Name>
+			<ArtCategory>Writing</ArtCategory>
+			<Category>Databases</Category>
+            <Description>I'm not telling you</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.1</CodeArt>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<SoftwareCategory Category="Puzzle">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+			<Dependency Software="Phone Game">Puzzles</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature>
+            <Name>Simple SimEngine</Name>
+			<Category>Databases</Category>
+			<ArtCategory>Algorithm</ArtCategory>
+            <Description>Some sort of simple sim</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature From="Simple SimEngine" Vital="TRUE">
+            <Name>Complex SimEngine</Name>
+			<Category>Algorithm</Category>
+            <Description>A simulation which is not trivial</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.7</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Simple SimEngine</Dependency>
+		</Feature>
+		<Feature From="Complex SimEngine" Vital="TRUE">
+            <Name>Very Complex SimEngine</Name>
+			<Category>Algorithm</Category>
+            <Description>One does not simply ask what a very complex simulation is; one must experience it for themselves</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.8</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Complex SimEngine</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Strategy Ruleset</Name>
+			<Description>The ruleset for a strategy game</Description>
+			<Category>Databases</Category>
+			<ArtCategory>Writing</ArtCategory>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.7</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Deep Strategy Ruleset</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>Writing</ArtCategory>
+			<Description>Deeper.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.8</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Strategy Ruleset</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Collision Engine</Name>
+			<Category>Algorithm</Category>
+			<Description>Let things hit other things</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Phone Game">Advanced Physics</Dependency>
+		</Feature>
+		<Feature>
+            <Name>Simple Tech Tree</Name>
+			<Category>Databases</Category>
+            <Description>The manual goes pshhh on the desk</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+            <Name>Complex Tech Tree</Name>
+			<Category>Databases</Category>
+            <Description>The manual goes WHOOMPF on the desk</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.5</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+		<Feature>
+            <Name>Individual Unit AI</Name>
+			<Category>Algorithm</Category>
+            <Description>AKA "pathfinding nightmares"</Description>
+			<DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+            <Name>Projectiles</Name>
+			<Category>Algorithm</Category>
+            <Description>Pew pew pew</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.4</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<SoftwareCategory Category="Infinite Racer">0</SoftwareCategory>
+			<SoftwareCategory Category="Alternate Reality">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+            <Name>Gambling Engine</Name>
+			<Category>Databases</Category>
+            <Description>The gambling engine</Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Gambling">0</SoftwareCategory>
+		</Feature>
+		<Feature Vital="TRUE">
+            <Name>Gambling UI</Name>
+			<Category>2D</Category>
+            <Description>The interface for the gambling game</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.3</CodeArt>
+			<SoftwareCategory Category="Gambling">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Gambling Engine</Dependency>
+		</Feature>
+		<Feature>
+            <Name>Variable gravity</Name>
+			<Category>Algorithm</Category>
+            <Description>WHAT EVEN IS UP</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Infinite Racer">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Physics puzzles</Name>
+			<Category>Algorithm</Category>
+            <Description>Either also known as "confusing as hell" or "masterful", depending on execution</Description>
+			<DevTime>3</DevTime>
+			<Innovation>4</Innovation>
+			<Usability>4</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Infinite Racer">0</SoftwareCategory>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+			<Dependency Software="Phone Game">Advanced Physics</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+            <Name>Flanking AI</Name>
+			<Category>Databases</Category>
+            <Description>Games: teaching children that it is always safest to stab in the back</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature>
+            <Name>Cover system</Name>
+			<Category>Databases</Category>
+            <Description>Hiding behind a thing so other things can't hit you with things</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<Dependency Software="Phone Game">Flanking AI</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Open world</Name>
+			<Description>Like a whole... world, and it's... you know, open</Description>
+			<Category>System</Category>
+			<ArtCategory>Writing</ArtCategory>
+			<DevTime>5</DevTime>
+			<Innovation>4</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<SoftwareCategory Category="Alternate Reality">0</SoftwareCategory>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Phone Game">Worldbuilding</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Internet Multiplayer</Name>
+			<Category>Network</Category>
+			<Description>For a more global game feature.</Description>
+			<DevTime>2</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Networking</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<SoftwareCategory Category="Adventure">0</SoftwareCategory>
+			<SoftwareCategory Category="Strategy">0</SoftwareCategory>
+			<SoftwareCategory Category="Alternate Reality">0</SoftwareCategory>
+			<SoftwareCategory Category="Gambling">0</SoftwareCategory>
+			<SoftwareCategory Category="Puzzle">0</SoftwareCategory>
+		</Feature>
+    </Features>
+</SoftwareType>

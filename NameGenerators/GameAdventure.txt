@@ -1,0 +1,34 @@
+[REPLACE]
+-start(base)
+-base(base2)
+Stars 
+Wizards 
+Vampires 
+Where Wolves 
+Werewolves 
+Thieves 
+Warriors 
+Ducks 
+Cats 
+Dogs 
+Donkeys 
+Wolves 
+Leopards 
+Ocelots 
+-base2(base3,stop)
+Falter
+Fall
+Stagger
+Wander
+Flail
+Seek
+-base3(end,stop)
+Far From Home
+Away and Away
+To What May
+From Doom 
+To Doom
+Towards A Toll Not Known
+Evermore
+Again!
+-end(stop)

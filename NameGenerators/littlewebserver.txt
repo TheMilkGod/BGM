@@ -1,0 +1,31 @@
+-base(smallsecond,largesecond,ext)
+We
+Fr
+Sp
+It
+D
+Chin
+Swah
+Maur
+-smallsecond(ext,largesecond,stop)
+elsh
+ench
+ian
+utch
+ese
+ili
+ri
+-largesecond(ext,stop)
+dog
+cat
+fish
+fair
+monk
+leph
+-ext(stop)
+ lite
+ little
+ tiny
+ microserv
+ servlet
+ servitor

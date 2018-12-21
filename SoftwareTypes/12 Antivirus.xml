@@ -1,0 +1,143 @@
+<SoftwareType>
+	<Name>Antivirus</Name>
+	<Category>Protection</Category>
+	<Description>Protecting computers from digital troublemakers since it became profitable to do so.</Description>
+	<Random>0.44</Random>
+	<Popularity>0.86</Popularity>
+	<Retention>0.6</Retention>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>False</InHouse>
+	<Unlock>1985</Unlock>
+	<Iterative>1</Iterative>
+	<NameGenerator>Antivirus</NameGenerator>
+	<IdealPrice>36.66</IdealPrice>
+	<Features>
+		<Feature Forced="TRUE">
+			<Name>GUI</Name>
+			<Category>2D</Category>
+			<Description>See the things do the stuff!</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+		</Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+		</Feature>
+	<Feature Forced="TRUE">
+			<Name>File scan</Name>
+			<Category>Algorithm</Category>
+			<Description>Scan those files yo</Description>
+			<DevTime>4</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Firewall</Name>
+			<Unlock>1992</Unlock>
+			<Category>Network</Category>
+			<Description></Description>
+			<DevTime>5</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Operating System">Networking</Dependency>
+		</Feature>
+		<Feature  Vital="TRUE">
+			<Name>Background scan</Name>
+			<Description>Scan for viruses in the background causing hilarious file locks randomly</Description>
+			<Category>System</Category>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Antivirus">File scan</Dependency>
+			<Dependency Software="Operating System">Block Multithreading</Dependency>
+		</Feature>
+		<Feature>
+			<Name>Mail scan</Name>
+			<Category>System</Category>
+			<Description>There's always room for enlargement</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Networking</Dependency>
+		</Feature>
+		<Feature  Vital="TRUE">
+			<Name>Virus Databases</Name>
+			<Category>Databases</Category>
+			<Unlock>1991</Unlock>
+			<Category>Network</Category>
+			<Description>Automagically keep your user's virus definitions up to date</Description>
+			<DevTime>4</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+			<Dependency Software="Operating System">Networking</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Packet scanning</Name>
+			<Category>Network</Category>
+			<Description>Because networks are obviously far too fast and need to be slowed down for security</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Networking</Dependency>
+		</Feature>
+		<Feature Forced="TRUE" Vital="TRUE">
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio" Vital="TRUE">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

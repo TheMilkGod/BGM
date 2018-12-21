@@ -1,0 +1,18 @@
+-start(base)
+-base(base2)
+Everything Is 
+Everywhere Is 
+Everyone Is 
+Go Get Some 
+Collect 'Em: 
+Time For... 
+Dude, Why Are You 
+Run! It's 
+Extreme Reality 
+-base2(end,stop)
+Boobs
+Geocaching
+Racing
+Aliens!
+Far Away
+-end(stop)

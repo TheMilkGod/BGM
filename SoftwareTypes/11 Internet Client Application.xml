@@ -1,0 +1,266 @@
+<SoftwareType>
+	<Name>Internet Client App</Name>
+	<Category>Networking</Category>
+	<Description>Power tools for end-users to use on the internet to do stuff and things</Description>
+	<Random>0.1</Random> 
+    <Retention>0.8</Retention>
+    <Iterative>1</Iterative>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<Unlock>1985</Unlock>
+    <Categories>
+        <Category Name="SSH">
+            <Description>For all your secure remote access needs</Description>
+            <Popularity>0.2</Popularity>
+			<Retention>1</Retention>
+			<Iterative>1</Iterative>
+            <TimeScale>0.5</TimeScale>
+			<IdealPrice>12.99</IdealPrice>
+            <NameGenerator>ssh</NameGenerator>
+        </Category>
+		<Category Name="File Transfer Client">
+            <Description>For all your remote file access and storage needs, or probably some</Description>
+            <Popularity>0.3</Popularity>
+			<Retention>1</Retention>
+			<Iterative>1</Iterative>
+            <TimeScale>0.4</TimeScale>
+			<IdealPrice>14.99</IdealPrice>
+            <NameGenerator>filetransfer</NameGenerator>
+        </Category>
+		<Category Name="Web browser">
+            <Description>For the web, and browsing thereof it; not to be confused with the Bowsing of Peaches</Description>
+			<Unlock>1992</Unlock>
+            <Popularity>0.9</Popularity>
+			<Retention>0.9</Retention>
+			<Iterative>1</Iterative>
+            <TimeScale>0.5</TimeScale>
+			<IdealPrice>5.99</IdealPrice>
+            <NameGenerator>webbrowser</NameGenerator>
+        </Category>
+    </Categories>
+    <Features>
+        <Feature Forced="True">
+            <Name>CLI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <Description>Such very much typing</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>4</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="SSH">0</SoftwareCategory>
+			<SoftwareCategory Category="File Transfer Client">0</SoftwareCategory>
+            <Dependency Software="Operating System">Terminal</Dependency>
+        </Feature>
+		<Feature From="CLI">
+            <Name>GUI</Name>
+            <Category>2D</Category>
+            <Description>So many click</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability> 
+			<CodeArt>0.6</CodeArt>
+			<SoftwareCategory Category="SSH">0</SoftwareCategory>
+			<SoftwareCategory Category="File Transfer Client">0</SoftwareCategory>
+            <Dependency Software="Operating System">GUI</Dependency>
+        </Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<SoftwareCategory Category="SSH">2020</SoftwareCategory>
+			<SoftwareCategory Category="File Transfer Client">2020</SoftwareCategory>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+	</Feature>
+		<Feature Forced="True">
+            <Name>Shell Interface</Name>
+            <Category>Network</Category>
+            <Description>The interface between the user and the remote operating system</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>3</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="SSH">0</SoftwareCategory>
+            <Dependency Software="Operating System">Terminal</Dependency>
+			<Dependency Software="Operating System">Networking</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Encryption</Name>
+			<Category>Algorithm</Category>
+            <Description>Making things more secure since... well, to be honest we're not sure when, the info is encrypted and the government stole the key</Description>
+            <DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="SSH">1980</SoftwareCategory>
+			<Dependency Software="Databases">User-Defined Functions</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>FTP</Name>
+            <Category>Network</Category>
+            <Description>Enabling file transfers insecurely</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="File Transfer Client">0</SoftwareCategory>
+            <Dependency Software="Operating System">Networking</Dependency>
+        </Feature>
+		<Feature From="FTP">
+            <Name>SCP</Name>
+            <Category>Network</Category>
+            <Description>Yay more secure file transfers</Description>
+            <DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="File Transfer Client">0</SoftwareCategory>
+            <Dependency Software="Operating System">Networking</Dependency>
+			<Dependency Software="Internet Client App">FTP</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Browser engine</Name>
+            <Category>Network</Category>
+            <Description>The vroom in your web room</Description>
+            <DevTime>4</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Web browser">1992</SoftwareCategory>
+            <Dependency Software="Operating System">Networking</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>HTTPS</Name>
+            <Category>Network</Category>
+            <Description>Encryption, thus ensuring the government can read everything you do, or maybe that wasn't quite right?</Description>
+            <DevTime>4</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Web browser">1994</SoftwareCategory>
+			<Dependency Software="Internet Client App">Browser engine</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Bookmarks</Name>
+			<Category>Databases</Category>
+            <Description>The thing you don't delete often enough</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Web browser">0</SoftwareCategory>
+			<Dependency Software="Internet Client App">Browser engine</Dependency>
+            <Dependency Software="Databases">Search</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>History</Name>
+			<Category>Databases</Category>
+            <Description>That thing you delete too often</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Web browser">0</SoftwareCategory>
+			<Dependency Software="Internet Client App">Browser engine</Dependency>
+            <Dependency Software="Databases">Databases</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Integral download manager</Name>
+			<Category>Databases</Category>
+            <Description>Persistence is king! Resume downloads! Rejoice, the dark ages are over, ish. Maybe</Description>
+            <DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Web browser">1997</SoftwareCategory>
+			<Dependency Software="Internet Client App">Browser engine</Dependency>
+            <Dependency Software="Databases">Databases</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Tabbed browsing</Name>
+			<Category>Databases</Category>
+            <Description>Browsing will never be the same again</Description>
+            <DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>5</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Web browser">1997</SoftwareCategory>
+			<Dependency Software="Internet Client App">Browser engine</Dependency>
+            <Dependency Software="Databases">Event Notification</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Tab manager</Name>
+            <Category>2D</Category>
+            <Description>Manage the tabs, lest they manage you</Description>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Web browser">0</SoftwareCategory>
+			<Dependency Software="Internet Client App">Browser engine</Dependency>
+			<Dependency Software="Internet Client App">Tabbed browsing</Dependency>
+            <Dependency Software="Databases">Search</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Extensions</Name>
+			<Category>Databases</Category>
+            <Description>Allow end-users to develop add-ons like popup blockers and the like</Description>
+            <DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Server>0.001</Server>
+			<SoftwareCategory Category="Web browser">0</SoftwareCategory>
+			<Dependency Software="Internet Client App">Browser engine</Dependency>
+            <Dependency Software="Databases">Databases</Dependency>
+        </Feature>
+		<Feature Forced="TRUE" Vital="TRUE">
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio" Vital="TRUE">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+    </Features>
+</SoftwareType>

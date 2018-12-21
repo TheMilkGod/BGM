@@ -1,0 +1,236 @@
+<SoftwareType>
+	<Name>Business Software</Name>
+	<Category>Business</Category>
+	<Description>Software for small businesses</Description>
+	<Random>0.1</Random>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>False</InHouse>
+	<Categories>
+		<Category Name="Business Enterprise Suite">
+			<Description>ICS, ledging, and business process analytics all in one very expensive, extremely complex package</Description>
+			<Popularity>0.58</Popularity>
+			<Retention>0.9</Retention>
+			<TimeScale>1.5</TimeScale>
+			<Iterative>1</Iterative>
+			<NameGenerator>BES</NameGenerator>
+			<IdealPrice>599.95</IdealPrice>
+			<Unlock>2000</Unlock>
+		</Category>
+		<Category Name="Inventory Control System">
+			<Description>Help businesses keep track of their stock</Description>
+			<Popularity>0.445</Popularity>
+			<Retention>0.83</Retention>
+			<TimeScale>0.75</TimeScale>
+			<Iterative>1</Iterative>
+			<NameGenerator>ics</NameGenerator>
+			<IdealPrice>199.95</IdealPrice>
+		</Category>
+		<Category Name="General Ledger">
+			<Description>Simple account tracking</Description>
+			<Popularity>0.442</Popularity>
+			<Retention>0.79</Retention>
+			<TimeScale>0.75</TimeScale>
+			<Iterative>1</Iterative>
+			<NameGenerator>generalledger</NameGenerator>
+			<IdealPrice>129.95</IdealPrice>
+		</Category>
+		<Category Name="Business process software">
+			<Description>Workflow management and analytics</Description>
+			<Popularity>0.314</Popularity>
+			<Retention>0.69</Retention>
+			<TimeScale>0.79</TimeScale>
+			<Iterative>1</Iterative>
+			<NameGenerator>bps</NameGenerator>
+			<IdealPrice>199.95</IdealPrice>
+		</Category>
+	</Categories>
+	<Features>
+			<Feature Forced="True">
+            <Name>CLI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <Description>Everything via command-line. Laborious "fun".</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>5</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature From="CLI">
+            <Name>GUI</Name>
+            <Category>2D</Category>
+            <Description>Everything not on the command line, which really is a relief with Databases</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>0.6</CodeArt>
+			<Unlock>1975</Unlock>
+			<Dependency Software="Audio Tool">CLI</Dependency>
+			<Dependency Software="2D Editor">Integral GUI</Dependency>
+        </Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Inventory</Name>
+			<Category>Databases</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Inventory Control System">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Ledger</Name>
+			<Category>Databases</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="General Ledger">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Analytics</Name>
+			<Category>Algorithm</Category>
+			<Description>Statistics, charts, whatnot</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+		</Feature>
+		<Feature>
+			<Name>Process Modeler</Name>
+			<Category>Algorithm</Category>
+			<Description>Models processes for the simulation module to simulate sims</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+			<SoftwareCategory Category="Business process software">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+		</Feature>
+		<Feature>
+			<Name>Workflow Module</Name>
+			<Category>Algorithm</Category>
+			<Description>Flow. Your work</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+			<Dependency Software="Business Software">Analytics</Dependency>
+			<SoftwareCategory Category="Business process software">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>External Datapoint Interface Layer</Name>
+			<Category>Algorithm</Category>
+			<Description>Between here and there, enabling simulation here of there tomorrow</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+			<Dependency Software="Business Software">Analytics</Dependency>
+			<SoftwareCategory Category="Business process software">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Simulation Module</Name>
+			<Category>Algorithm</Category>
+			<Description>Sims gonna sim</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+			<Dependency Software="Business Software">Analytics</Dependency>
+			<SoftwareCategory Category="Business process software">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Business Process Engine</Name>
+			<Category>Algorithm</Category>
+			<Description>Here is where blah blah blah engines</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+			<Dependency Software="Business Software">Analytics</Dependency>
+			<Dependency Software="Business Software">Simulation Module</Dependency>
+			<SoftwareCategory Category="Business process software">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Business Rules Engine</Name>
+			<Category>Algorithm</Category>
+			<Description>"OH GOD I THOUGHT IT WAS A COMPUTER WHY DOES IT HAVE SO MANY ENGINES"</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1976</Unlock>
+			<Dependency Software="Business Software">Analytics</Dependency>
+			<Dependency Software="Business Software">Business Process Engine</Dependency>
+			<Dependency Software="Business Software">Simulation Module</Dependency>
+			<SoftwareCategory Category="Business process software">0</SoftwareCategory>
+			<SoftwareCategory Category="Business Enterprise Suite">0</SoftwareCategory>
+		</Feature>
+		<Feature>
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

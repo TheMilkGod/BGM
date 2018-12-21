@@ -1,0 +1,17 @@
+-start(base)
+-base(base2)
+Turbulent 
+Majesterial 
+Historic 
+War 
+Steel 
+-base2(end,stop)
+Panthers
+Lions of Strategy
+Tigers of Combat
+Bears of War
+Mages
+Rage
+Justice
+Struggles of History
+-end(stop)

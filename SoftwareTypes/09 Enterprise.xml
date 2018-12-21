@@ -1,0 +1,331 @@
+<SoftwareType>
+<Name>Enterprise</Name>
+	<Category>Computing</Category>
+	<Description>Software for enterprises (quite likely not the spaceship, though)</Description>
+	<Random>0.24</Random>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>False</InHouse>
+	<IdealPrice>79.99</IdealPrice>
+	<Categories>
+		<Category Name="HR Management Software">
+			<Description>Help businesses keep track of their employees</Description>
+			<Popularity>0.59</Popularity>
+			<Retention>0.895</Retention>
+			<TimeScale>0.75</TimeScale>
+			<Iterative>1</Iterative>
+			<Unlock>1975</Unlock>
+			<NameGenerator>hms</NameGenerator>
+			<IdealPrice>89.99</IdealPrice>
+		</Category>
+		<Category Name="Project Management Software">
+			<Description>Manage projects with this software which itself is a project which requires management</Description>
+			<Popularity>0.53</Popularity>
+			<Retention>0.875</Retention>
+			<TimeScale>0.75</TimeScale>
+			<Iterative>1</Iterative>
+			<Unlock>1975</Unlock>
+			<NameGenerator>pms</NameGenerator>
+		</Category>		
+	</Categories>
+	<Features>
+		<Feature Forced="TRUE">
+			<Name>File Management</Name>
+			<Category>Databases</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Visualization Tools</Name>
+			<Category>2D</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="Databases">Statistics</Dependency>
+		</Feature>
+		<Feature Vital="True">
+            <Name>Local Backup</Name>
+			<Category>Databases</Category>
+            <Description>Because without failover, there is only panic</Description>
+            <DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+            <Dependency Software="Enterprise">File Management</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Secure Remote Backup Service</Name>
+            <Category>Network</Category>
+            <Description>Because fires/earthquakes/nuclear wars happen. Well, maybe not the last, hopefully</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Server>0.001</Server>
+            <Dependency Software="Operating System">Networking</Dependency>
+			<Dependency Software="Enterprise">File Management</Dependency>
+        </Feature>
+		<Feature Forced="True" Vital="True">
+			<Name>GUI</Name>
+			<Category>2D</Category>
+			<Description>Graphical User Interface</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<SoftwareCategory Category="HR Management Software">0</SoftwareCategory>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+		</Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Statistics System</Name>
+			<Category>Databases</Category>
+			<Description>Analytics schmanalytics</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Enterprise">GUI</Dependency>
+			<Dependency Software="Databases">Statistics</Dependency>
+			<SoftwareCategory Category="HR Management Software">0</SoftwareCategory>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+		</Feature>
+		<Feature Vital="True">
+			<Name>User Hierarchy</Name>
+			<Category>Databases</Category>
+			<Description>Now bosses everywhere can prove they're in charge because Comp Yootor, Great God of the Office, has said it is so</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>4</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Work Delegation</Name>
+			<Category>Databases</Category>
+			<Description>Probably quieter than running around the office screaming tasks at people, and cheaper on health insurance too</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Enterprise">User Hierarchy</Dependency>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Manual Synchronization</Name>
+			<Category>Databases</Category>
+			<Description>Or send floppy disk around once in a while</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+		</Feature>
+		<Feature Vital="True">
+			<Name>Network Synchronization</Name>
+			<Category>Network</Category>
+			<Description>Packets go pew pew pew</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Server>0.001</Server>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+			<Dependency Software="Operating System">Networking</Dependency>
+		</Feature>
+		<Feature Forced="True">
+            <Name>Employee Management System</Name>
+			<Category>Databases</Category>
+            <Description>The umbrella system upon which various HR modules depend</Description>
+            <DevTime>4</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>0.8</CodeArt>
+			<SoftwareCategory Category="HR Management Software">0</SoftwareCategory>
+			<Dependency Software="Enterprise">Visualization Tools</Dependency>
+			<Dependency Software="Databases">Event Notification</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Recruitment Management Module</Name>
+			<Category>Databases</Category>
+            <Description>Allowing clients to manage the recruitment process</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="HR Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Employee Management System</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Training Management Module</Name>
+			<Category>Databases</Category>
+            <Description>Allowing clients to manage the training process</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="HR Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Employee Management System</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Wage Management Module</Name>
+			<Category>Databases</Category>
+            <Description>I do not think it is possible to guess what this does</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="HR Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Employee Management System</Dependency>
+        </Feature>
+		<Feature>
+            <Name>Employee Feedback Module</Name>
+			<Category>Databases</Category>
+            <Description>Allowing clients to manage wages, wage scales, and the like</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="HR Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Employee Management System</Dependency>
+        </Feature>		    
+		<Feature Forced="True">
+            <Name>Project Management System</Name>
+			<Category>Databases</Category>
+            <Description>The umbrella system upon which various HR modules depend</Description>
+            <DevTime>3</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>0.8</CodeArt>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+			<Dependency Software="Enterprise">Visualization Tools</Dependency>
+			<Dependency Software="Databases">Event Notification</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Resource Tracking Module</Name>
+			<Category>Databases</Category>
+            <Description>Allowing clients to track resources deployed/available to/for any given project in the system</Description>
+            <DevTime>3</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Project Management System</Dependency>
+        </Feature>
+		<Feature Vital="True">
+			<Name>Field Service Module</Name>
+			<Category>Databases</Category>
+            <Description>Cloudware</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<Unlock>2005</Unlock>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Project Management System</Dependency>
+			<Dependency Software="Databases">Event Notification</Dependency>
+        </Feature>
+		<Feature Forced="True">
+            <Name>Team Assignment Module</Name>
+			<Category>Databases</Category>
+            <Description>Allowing clients to manage team assignments</Description>
+            <DevTime>2</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Project Management System</Dependency>
+			<Dependency Software="Databases">Event Notification</Dependency>
+        </Feature>
+		<Feature>
+            <Name>Team Chat</Name>
+			<Category>Network</Category>
+            <Description>For teams and team members to communicate</Description>
+            <DevTime>3</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+			<Dependency Software="Operating System">Networking</Dependency>
+            <Dependency Software="Enterprise">Project Management System</Dependency>
+        </Feature>
+		<Feature Vital="True">
+            <Name>Ticket System</Name>
+			<Category>Databases</Category>
+            <Description>A system to mark up issues, that when hooked into other systems enables rapid and efficient organisation of attempted resolutions of said issues, as well as tracking of progress</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<SoftwareCategory Category="Project Management Software">0</SoftwareCategory>
+            <Dependency Software="Enterprise">Project Management System</Dependency>
+			<Dependency Software="Databases">Event Notification</Dependency>
+        </Feature>
+		<Feature>
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

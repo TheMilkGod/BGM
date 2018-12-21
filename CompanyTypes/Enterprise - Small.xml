@@ -1,0 +1,9 @@
+<CompanyType>
+	<Specialization>Small Enterprise</Specialization>
+	<PerYear>0.1</PerYear>
+	<Min>1</Min>
+	<Max>3</Max>
+	<Types>
+		<Type Software="Business Software">1</Type>
+	</Types>
+</CompanyType>

@@ -1,0 +1,153 @@
+<SoftwareType>
+	<Name>Media Player</Name>
+	<Category>Multimedia</Category>
+	<Description>Create a premium media player for PC users to use</Description>
+	<Popularity>0.45</Popularity>
+	<Retention>0.6</Retention>
+	<TimeScale>1</TimeScale>
+	<Iterative>0.75</Iterative>	
+	<Random>0.13</Random>
+	<OSSpecific>TRUE</OSSpecific>
+	<OneClient>FALSE</OneClient>
+	<InHouse>TRUE</InHouse>
+	<Unlock>1994</Unlock>
+	<Category>OS</Category>
+	<NameGenerator>mediaplayer</NameGenerator>
+	<IdealPrice>27.75</IdealPrice>
+	<Needs>
+		<Name>Visual Tool</Name>
+		<Name>Audio Tool</Name>
+	</Needs>
+	<Features>
+			<Feature Forced="True">
+            <Name>CLI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <Description>Everything via command-line. Laborious "fun".</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>0</Usability>
+			<Stability>5</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature From="CLI">
+            <Name>GUI</Name>
+            <Category>2D</Category>
+            <Description>Everything not on the command line, which really is a relief with Databases</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>0.6</CodeArt>
+			<Unlock>1975</Unlock>
+			<Dependency Software="Audio Tool">CLI</Dependency>
+		</Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+	</Feature>
+	<Feature Forced="TRUE">
+			<Name>Core</Name>
+			<Category>System</Category>
+			<ArtCategory>Algorithm</ArtCategory>
+			<Description>Rendering, decoding, GUI, washing dishes, etc</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>0.6</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+	<Feature Vital="TRUE">
+			<Name>Media Library</Name>
+			<Category>Databases</Category>
+			<Description>Not the fun kind of library with an orangutan and interdimensionality, but still highly useful</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+			<Dependency Software="Media Player">Core</Dependency>
+			<Dependency Software="Databases">Search</Dependency>
+		</Feature>
+	<Feature VITAL="TRUE">
+			<Name>Network Streaming</Name>
+			<Category>Databases</Category>
+			<Description>Watch a video on your computer in your living room from your laptop! Watch probably totally maybe legal streams of live sports events on the internet! Also other things! Woo!</Description>
+			<DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1995</Unlock>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Media Player">Core</Dependency>
+		</Feature>	
+	<Feature>
+			<Name>Video Postprocessing</Name>
+			<Category>Algorithm</Category>
+			<Description>This enables enhancements made by the software using Algorithm. Whether this is actually of any value to the end user in most scenarios is debatable, but it sounds very impressive on paper...</Description>
+			<DevTime>1</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>0</Stability>
+			<CodeArt>1</CodeArt>
+			<Unlock>1996</Unlock>
+			<Dependency Software="Operating System">Block Multithreading</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Media Player">Core</Dependency>
+		</Feature>
+	<Feature Vital="TRUE">
+			<Name>Video Upscaling</Name>
+			<Category>Algorithm</Category>
+			<Description>Either like putting lipstick on a pig or like putting yoga pants on Shakira</Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>2</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Operating System">Simultaneous Multithreading</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Media Player">Core</Dependency>
+			<Dependency Software="Media Player">Video Postprocessing</Dependency>
+		</Feature>
+		<Feature Forced="TRUE" Vital="TRUE">
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio" Vital="TRUE">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>

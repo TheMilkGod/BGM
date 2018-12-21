@@ -1,0 +1,39 @@
+-start(base)
+-base(base2)
+Basis:  
+Game:  
+Movie:  
+Freak Of Nature:  
+Albatross of Execria:  
+Leather Godesses of Antares:  
+A Subtitle Too Far: 
+Space Wander: 
+Sky Violence: 
+War Thump: 
+Spasm Fist: 
+Hammer Justice: 
+Takedown Smash: 
+Puzzle Pump: 
+-base2(end,stop)
+The Pirates of Contrivia
+The Endless Robber Seamen
+Spacedy Stealy Men
+Vampires
+Neckbiterers
+Unexpected Biting Of People By Things
+Eek!
+The Game of the Movie
+The Movie of the Game
+Squidloose
+Fast Feet
+Aquamarine
+Bulldog
+Blue
+Red
+Green
+Arrival
+Descent
+Advance!
+Begin
+Again
+-end(stop)

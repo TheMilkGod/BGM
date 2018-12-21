@@ -1,0 +1,16 @@
+<CompanyType>
+	<Specialization>Computing Generalists</Specialization>
+	<PerYear>0.01</PerYear>
+	<Min>0</Min>
+	<Max>3</Max>
+	<Types>
+		<Type Software="Operating System">1</Type>
+		<Type Software="Enterprise">1</Type>
+		<Type Software="Media Player">1</Type>
+		<Type Software="Web Server">1</Type>
+		<Type Software="Home User Application">1</Type>
+		<Type Software="Business Software">1</Type>
+		<Type Software="Office Software">1</Type>
+		<Type Software="Databases">1</Type>
+	</Types>
+</CompanyType>

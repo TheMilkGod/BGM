@@ -1,0 +1,17 @@
+[REPLACE]
+-start(base)
+-base(base2, stop)
+Plane 
+Train 
+Car 
+Cities 
+City 
+-base2(end,stop)
+Sim
+World
+Universe
+Business Simulator
+Tycoon
+Capitalist
+Monopolist
+-end(stop)

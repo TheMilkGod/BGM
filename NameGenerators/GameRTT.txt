@@ -1,0 +1,11 @@
+-start(base)
+Tactics  
+Strategy 
+Art 
+Spiral 
+Warfare 
+-base(base2)
+Command Bears
+Of War
+Death and Teacakes
+-end(stop)

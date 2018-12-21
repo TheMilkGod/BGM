@@ -1,0 +1,19 @@
+-start(base)
+-base(base2)
+Tales of 
+The Story of 
+-base2(end,stop)
+Becoming A Hero
+A Hero Becoming
+Mr Sneezy
+Sir Smacksalot
+Tittydoopsywoo
+Dandi McSmackytown
+Fiery Justice
+The End of the World
+The Machine of Time
+Dubious Exploits
+Thailand and The Shrinking Plumbusae
+Fishes Who Hate Spiders
+A Cat Called Spanky
+-end(stop)

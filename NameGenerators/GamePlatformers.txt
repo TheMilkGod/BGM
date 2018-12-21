@@ -1,0 +1,20 @@
+-start(base)
+-base(base2)
+Whizzy 
+Zizzy 
+Fizzy 
+Missy 
+Ziry 
+Gary and 
+-base2(end,stop)
+and Miry
+Furry
+Scrambled Mikey
+Egg
+Whooshgo
+and SHODAN
+Bouncepop
+Bouncy Times
+Leapomatic
+the Ranoutofideasifier
+-end(stop)

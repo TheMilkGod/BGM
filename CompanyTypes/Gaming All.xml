@@ -1,0 +1,12 @@
+<CompanyType>
+	<Specialization>Gaming and Engines</Specialization>
+	<PerYear>0.3</PerYear>
+	<Min>2</Min>
+	<Max>3</Max>
+	<Types>
+		<Type Software="Game Engine">1</Type>
+		<Type Software="Game">1</Type>
+		<Type Software="Phone Game">1</Type>
+		<Type Software="Game Asset">1</Type>
+	</Types>
+</CompanyType>

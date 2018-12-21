@@ -1,0 +1,190 @@
+<SoftwareType>
+	<Name>2D Editor</Name>
+	<Category>Graphics</Category>
+	<Description>Program that allows you to handle 2 dimensional arrays of color information</Description>
+	<Random>0.4</Random>
+	<Popularity>0.74</Popularity>
+	<Retention>0.7</Retention>
+	<OSSpecific>True</OSSpecific>
+	<OSLimit>Computer</OSLimit>
+	<OneClient>False</OneClient>
+	<InHouse>True</InHouse>
+	<Iterative>1</Iterative>
+	<NameGenerator>2DEditor</NameGenerator>
+	<IdealPrice>149.99</IdealPrice>
+	<Features>
+	        <Feature Forced="True">
+            <Name>CLI</Name>
+			<Category>UI</Category>
+            <Description>Everything via command-line. Laborious "fun".</Description>
+            <DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>4</Stability>            
+			<CodeArt>1</CodeArt>
+        </Feature>
+		<Feature From="CLI">
+            <Name>Integral GUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <Description>An integral GUI, just for this software. Additional devtime versus building on what an OS provides</Description>
+            <DevTime>3</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>1</CodeArt>
+			<Dependency Software="2D Editor">CLI</Dependency>
+        </Feature>
+		<Feature From="Integral GUI">
+            <Name>GUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>2D</ArtCategory>
+            <Description>Everything not on the command line, which really is a relief with Databases</Description>
+            <DevTime>2</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>            
+			<CodeArt>0.6</CodeArt>
+			<Unlock>1975</Unlock>
+			<Dependency Software="2D Editor">CLI</Dependency>
+        </Feature>
+		<Feature From="GUI">
+			<Name>HUI</Name>
+			<Category>UI</Category>
+			<ArtCategory>3D</ArtCategory>
+			<Description>The Holographic User Interface allows users to actually interact with what they are doing. No longer will they be bound to RSI merely in two limbs</Description>
+			<DevTime>3</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>2</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Unlock>2020</Unlock>
+			<Dependency Software="Operating System">Integral Holographic API</Dependency>
+		</Feature>
+		<Feature Forced="TRUE">
+			<Name>Image rendering</Name>
+			<Category>2D</Category>
+			<Description>Actually display an image on the screen</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Pixel manipulation</Name>
+			<Category>Algorithm</Category>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="Databases">User-Defined Functions</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Image effects</Name>
+			<Unlock>1986</Unlock>
+			<Category>Algorithm</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Description>Needs more swirl</Description>
+			<DevTime>4</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="2D Editor">Pixel manipulation</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature Vital="TRUE">
+			<Name>Advanced brushes</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Unlock>1987</Unlock>
+			<Description></Description>
+			<DevTime>2</DevTime>
+			<Innovation>3</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+			<Dependency Software="2D Editor">Image effects</Dependency>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+		</Feature>
+		<Feature Research="Image effects">
+			<Name>Cinematic filter</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Unlock>1993</Unlock>
+			<Description>Instant professionalism</Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0.5</CodeArt>
+		</Feature>
+		<Feature>
+			<Name>Video editing</Name>
+			<Category>Algorithm</Category>
+			<ArtCategory>2D</ArtCategory>
+			<Description></Description>
+			<DevTime>4</DevTime>
+			<Innovation>2</Innovation>
+			<Usability>2</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+			<Dependency Software="Office Software">Text Editor</Dependency>
+			<Dependency Software="2D Editor">Image effects</Dependency>
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+		</Feature>
+		<Feature Research="Video editing">
+			<Name>Video codec</Name>
+			<Category>Algorithm</Category>
+			<Unlock>1994</Unlock>
+			<Description></Description>
+			<DevTime>3</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>
+		</Feature>
+		<Feature>
+			<Name>Stock library</Name>
+			<Category>2D</Category>
+			<Description></Description>
+			<DevTime>3</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>3</Usability>
+			<Stability>1</Stability>
+			<CodeArt>0</CodeArt>
+			<Dependency Software="Databases">Databases</Dependency>
+		</Feature>
+		<Feature>
+			<Name>8-bit audio</Name>
+			<Category>Audio</Category>
+			<Description>Eventually, simply awe.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>0</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">8-bit audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+		</Feature>
+		<Feature From="8-bit audio">
+			<Name>High quality audio</Name>
+			<Category>Audio</Category>
+			<Description>Many bits in your awww.</Description>
+			<DevTime>1</DevTime>
+			<Innovation>1</Innovation>
+			<Usability>1</Usability>
+			<Stability>1</Stability>
+			<CodeArt>1</CodeArt>						
+			<Dependency Software="Operating System">HD audio</Dependency>
+			<Dependency Software="Audio Tool">Recording</Dependency>
+			<Dependency Software="Audio Tool">Audio compression</Dependency>
+		</Feature>
+	</Features>
+</SoftwareType>
