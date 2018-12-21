@@ -10,7 +10,7 @@
 			<TimeScale>1</TimeScale>
 			<Iterative>1</Iterative>
 			<NameGenerator>DLCgen</NameGenerator>
-			<IdealPrice>19.00</IdealPrice>
+			<IdealPrice>20.00</IdealPrice>
 		</Category>
 		<Category Name="Update">
 			<Description>Update Your Game</Description>
@@ -128,6 +128,84 @@
 		<Feature Forced="False">
 			<Name>New Weapons</Name>
 			<Description>Create New (a) Weapon(s)</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2010</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Emotes</Name>
+			<Description>Create New Emotes</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2008</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Customization Options</Name>
+			<Description>Create New Customization Options</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2010</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>Exclusive Rewards</Name>
+			<Description>Create New Rewards</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2004</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Gamemode(s)</Name>
+			<Description>Create New Gamemode(s)</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2010</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Enemies</Name>
+			<Description>Create New Enemies</Description>
+			<Category>3D</Category>
+			<DevTime>1</DevTime>
+			<Innovation>10</Innovation>
+			<Usability>10</Usability>
+			<Stability>11</Stability>  
+			<CodeArt>1</CodeArt>
+			<Unlock>2005</Unlock>
+			<Dependency Software="Game">DLC Content</Dependency>
+			<Dependency Software="Game">Updates</Dependency>
+		</Feature>
+		<Feature Forced="False">
+			<Name>New Gear</Name>
+			<Description>Create New Gear</Description>
 			<Category>3D</Category>
 			<DevTime>1</DevTime>
 			<Innovation>10</Innovation>
